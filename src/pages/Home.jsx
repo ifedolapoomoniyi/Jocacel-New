@@ -11,14 +11,20 @@ import About1 from "../assets/About1.png";
 import About2 from "../assets/About2.png";
 import About3 from "../assets/About3.png";
 import About4 from "../assets/About4.png";
+import { motion } from "framer-motion";
 
 const Home = () => {
 	return (
-		<div className="text-xl">
+		<motion.div
+			initial={{ opacity: 0, x: 100 }}
+			animate={{ opacity: 1, x: 0 }}
+			exit={{ opacity: 0, x: -100 }}
+			className="text-xl"
+		>
 			<Navbar />
 
 			{/* Hero Section */}
-			<div className="h-screen w-full hero text-white flex flex-col items-center justify-center">
+			<div className="landing-hero  h-screen w-full text-white flex flex-col items-center justify-center">
 				<h1 className="text-3xl">
 					Top Designers and Developers of Buildings in Nigeria
 				</h1>
@@ -263,7 +269,7 @@ const Home = () => {
 
 			{/* Footer */}
 			<Footer />
-		</div>
+		</motion.div>
 	);
 };
 
