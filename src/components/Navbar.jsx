@@ -5,7 +5,7 @@ const Navbar = () => {
 	return (
 		<div className="flex gap-2 items-center justify-center p-2">
 			<div className="flex gap-8">
-				<Link className="hover:text-primary" to="/home">Home</Link>
+				<Link className="hover:text-primary" to="/">Home</Link>
 				<Link className="hover:text-primary" to="/team">Team</Link>
 				<Link className="hover:text-primary" to="/services">Services</Link>
 			</div>
@@ -18,7 +18,7 @@ const Navbar = () => {
 			<div className="flex gap-8">
 				<Link className="hover:text-primary" to="/real-estate" >Real Estate</Link>
 				<Link className="hover:text-primary" to="/projects">Projects</Link>
-				<Link className="hover:text-primary" to="/contact-us">Contact Us</Link>
+				<Link className="hover:text-primary" to="/contact">Contact Us</Link>
 			</div>
 		</div>
 	);

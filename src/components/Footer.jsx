@@ -4,6 +4,7 @@ import twitter from "../assets/icons/twitter.svg";
 import linkedin from "../assets/icons/linkedin.svg";
 import Logo from "../assets/Logo.png"
 import Go from "../assets/icons/Go.svg"
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 	return (
@@ -23,11 +24,11 @@ const Footer = () => {
 				{/* Menu */}
 				<div className="flex flex-col gap-5">
 					<span className="font-semibold">Menu</span>
-          <span>Home</span>
-					<span>About Us</span>
-					<span>Our Projects</span>
-					<span>Real Estate</span>
-					<span>Services</span>
+          <Link to="/" className="hover:text-primary">Home</Link>
+					<Link to="/team" className="hover:text-primary">About Us</Link>
+					<Link to="/" className="hover:text-primary">Our Projects</Link>
+					<Link to="/real-estate" className="hover:text-primary">Real Estate</Link>
+					<Link className="hover:text-primary">Services</Link>
 				</div>
 
 				{/* Contacts */}
