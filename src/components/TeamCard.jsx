@@ -9,7 +9,7 @@ const TeamCard = ({ name, title, route, text, image }) => {
 			</div>
 
       <div className="px-4 p-2 font-semibold">{name}</div>
-      <div className="p-4 font-thin">{text}... <span className="text-primary">See more</span></div>
+      <div className="p-4 font-thin">{text.length > 100? text.slice(0,100): text}... <span className="text-primary">See more</span></div>
 		</Link>
 	);
 };
