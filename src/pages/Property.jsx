@@ -11,7 +11,7 @@ const Property = () => {
 		<div className="text-xl">
 			<Navbar />
 
-			<div className="p-5 flex flex-row gap-5">
+			<div className="p-5 flex lg:flex-row flex-col gap-5">
 				<div className="flex-1">
 					<ImgSlider />
 				</div>
