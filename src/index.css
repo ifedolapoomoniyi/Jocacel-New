@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Nunito,Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -12,3 +15,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Exo 2', sans-serif;
+  }
+}
+
+
+
+.landing-hero {
+  background-image: url(assets/Hero.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.team-hero {
+  background-image: url(assets/TeamHero.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.estate-hero {
+  background-image: url(assets/EstateImg.png);
+  background-size: cover;
+  background-position: center;
+}
