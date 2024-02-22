@@ -6,6 +6,8 @@ import Fakeye from "./pages/Fakeye";
 import Contact from "./pages/Contact";
 import Catalogue from "./pages/Catalogue";
 import Property from "./pages/Property";
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
 	return (
@@ -18,6 +20,8 @@ function App() {
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/real-estate" element={<Catalogue />} />
 					<Route path="/real-estate/:propertyname" element={<Property/>} />
+					<Route path="/login" element={<Login/>} />
+					<Route path="/dashboard" element={<Dashboard/>} />
 				</Routes>
 			</BrowserRouter>
 		</>
