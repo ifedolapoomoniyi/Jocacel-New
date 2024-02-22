@@ -8,6 +8,7 @@ import Catalogue from "./pages/Catalogue";
 import Property from "./pages/Property";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
+import TeamUpload from "./pages/TeamUpload";
 
 function App() {
 	return (
@@ -22,6 +23,7 @@ function App() {
 					<Route path="/real-estate/:propertyname" element={<Property/>} />
 					<Route path="/login" element={<Login/>} />
 					<Route path="/dashboard" element={<Dashboard/>} />
+					<Route path="/dashboard/team" element={<TeamUpload/>} />
 				</Routes>
 			</BrowserRouter>
 		</>
