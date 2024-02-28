@@ -3,7 +3,9 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const routes = require("./routes/api/team");
 const propertyRoutes = require("./routes/api/properties");
+const projectRoutes = require("./routes/api/projects");
 const connectDB = require("./config/db");
+const Imgur = require("imgur");
 
 const app = express();
 
@@ -24,6 +26,8 @@ app.use("/", routes);
 app.use("/api/team", routes);
 
 app.use("/api/properties", propertyRoutes);
+
+app.use("/api/projects", projectRoutes);
 
 // Connect to MongoDB
 connectDB();
