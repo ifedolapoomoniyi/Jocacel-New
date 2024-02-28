@@ -17,7 +17,7 @@ const Navbar = () => {
 
 			<div className="flex gap-8">
 				<Link className="hover:text-primary" to="/real-estate" >Real Estate</Link>
-				<Link className="hover:text-primary" to="/projects">Projects</Link>
+				<Link className="hover:text-primary" to="/gallery">Projects</Link>
 				<Link className="hover:text-primary" to="/contact">Contact Us</Link>
 			</div>
 		</div>
