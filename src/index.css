@@ -42,3 +42,71 @@
   background-size: cover;
   background-position: center;
 }
+
+.dashBg {
+  background-image: url(assets/dashimg1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.dashBg2 {
+  background-image: url(assets/dashimg2.png);
+  background-size: cover;
+  background-position: center;
+}
+.dashBg3 {
+  background-image: url(assets/dashimg3.png);
+  background-size: cover;
+  background-position: center;
+}
+.gallery-hero {
+  background-image: url(assets/GalleryImg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Sidebar styling */
+
+.hamburger {
+  display: none;
+  z-index: 999;
+}
+
+@media (max-width: 1024px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    position: fixed;
+    right: 1rem;
+    top: 2vh;
+    z-index: 999;
+    background: white;
+    border-radius: 5px;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #17A1FA;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+}
