@@ -7,23 +7,25 @@ import { FaTrash } from "react-icons/fa";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useFormik } from "formik";
+import { motion } from "framer-motion";
 
 const TeamUpload = () => {
-  const handleSubmit = async (values) => {
+	const handleSubmit = async (values) => {
 		try {
 			const res = await fetch(`${BASE_URL}/team`, {
-        method: 'POST',
-        headers: {
-        'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(values),});
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify(values),
+			});
 			if (res.status === 200) {
-        console.log("Upload succesfull")
-        Fetch();
-        toast.info("Upload Successful")
-      }
+				console.log("Upload succesfull");
+				Fetch();
+				toast.info("Upload Successful");
+			}
 		} catch (error) {
-			console.error("error ooo",error.message);
+			console.error("error ooo", error.message);
 		}
 	};
 
@@ -55,30 +57,39 @@ const TeamUpload = () => {
 
 	// Handle Delete
 	const deleteTeamMember = async (id) => {
-		const res = await fetch(`${BASE_URL}/team/${id}`, {
-			method: "DELETE",
-		});
-		const data = await res.json();
-		console.log(data);
-		if (data.msg == "Team member deleted successfully") {
-			Fetch();
-			toast.success("Team member deleted successfully");
-		} else {
-			console.log("That didn't work");
+		try {
+			const res = await fetch(`${BASE_URL}/team/${id}`, {
+				method: "DELETE",
+			});
+			const data = await res.json();
+			console.log(data);
+			if (data.msg == "Team member deleted successfully") {
+				Fetch();
+				toast.success("Team member deleted successfully");
+			} else {
+				console.log("That didn't work");
+			}
+		} catch (err) {
+			toast.error("Something went wrong");
 		}
 	};
 
 	// handle submit
 
 	return (
-		<div className="flex flex-row text-xl">
+		<motion.div
+			initial={{ opacity: 0, x: 100 }}
+			animate={{ opacity: 1, x: 0 }}
+			exit={{ opacity: 0, x: -100 }}
+			className="flex flex-row text-xl w-full"
+		>
 			<Sidebar />
 
-			<div>
+			<div className="w-full">
 				<Topbar />
 				<ToastContainer />
 
-				<div className="flex gap-10 items-top justify-around flex-wrap">
+				<div className="flex gap-10 items-top flex-wrap">
 					<div className=" w-[350px] rounded-lg shadow-xl">
 						<h3 className="text-xl font-semibold p-4 bg-gray-300">
 							Team Members
@@ -162,7 +173,7 @@ const TeamUpload = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 
