@@ -27,7 +27,7 @@ const Property = () => {
 					<div className="font-light text-primary">
 						Location
 						<div className="py-2 font-normal text-black">
-							12 Shodamola Street, Ajoke Estate, Fagba, Laogs
+							12 Shodamola Street, Ajoke Estate, Fagba, Lagos
 						</div>
 					</div>
 

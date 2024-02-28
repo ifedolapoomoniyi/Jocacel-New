@@ -3,10 +3,31 @@ import Navbar from "../components/Navbar";
 import TeamCard from "../components/TeamCard";
 import TeamImg from "../assets/TeamImg.png";
 import Footer from "../components/Footer";
+import { motion } from "framer-motion";
+
+import { useState, useEffect } from "react";
+import { BASE_URL } from "../utils";
 
 const Team = () => {
+	const [teamData, setTeamData] = useState([]);
+
+	const Fetch = async () => {
+		const res = await fetch(`${BASE_URL}/team`);
+		const data = await res.json();
+		setTeamData(data);
+		console.log(data);
+	};
+
+	useEffect(() => {
+		Fetch();
+	}, []);
 	return (
-		<div className="text-xl">
+		<motion.div
+			initial={{ opacity: 0, x: 100 }}
+			animate={{ opacity: 1, x: 0 }}
+			exit={{ opacity: 0, x: -100 }}
+			className="text-xl"
+		>
 			<Navbar />
 
 			<div className="team-hero text-white flex flex-col items-center justify-center h-screen">
@@ -50,55 +71,20 @@ const Team = () => {
 
 			{/* Team cards */}
 			<div className="flex flex-row flex-wrap gap-5 items-center justify-center p-10">
-				<TeamCard
-					name={"Abolarin Fakeye"}
-					title={"CEO"}
-					route={"/team/abolarin-fakeye"}
-					text={
-						"A very high value is attached to reliable and competent personnel. They are the greatest assets that we require"
-					}
-					image={TeamImg}
-				/>
-				<TeamCard
-					name={"Abolarin Fakeye"}
-					title={"Executive Director"}
-					route={"/"}
-					text={
-						"A very high value is attached to reliable and competent personnel. They are the greatest assets that we require"
-					}
-					image={TeamImg}
-				/>
-				<TeamCard
-					name={"Abolarin Fakeye"}
-					title={"CEO"}
-					route={"/"}
-					text={
-						"A very high value is attached to reliable and competent personnel. They are the greatest assets that we require"
-					}
-					image={TeamImg}
-				/>
-				<TeamCard
-					name={"Abolarin Fakeye"}
-					title={"CEO"}
-					route={"/"}
-					text={
-						"A very high value is attached to reliable and competent personnel. They are the greatest assets that we require"
-					}
-					image={TeamImg}
-				/>
-				<TeamCard
-					name={"Abolarin Fakeye"}
-					title={"CEO"}
-					route={"/"}
-					text={
-						"A very high value is attached to reliable and competent personnel. They are the greatest assets that we require"
-					}
-					image={TeamImg}
-				/>
+				{teamData.map((team) => (
+					<TeamCard
+						key={team._id}
+						name={team.name}
+						title={team.role}
+						route={`/team/${team._id}`}
+						text={team.description}
+						image={TeamImg}
+					/>
+				))}
 			</div>
 
-      <Footer/>
-		</div>
+			<Footer />
+		</motion.div>
 	);
 };
 
