@@ -41,6 +41,9 @@ router.get("/:id", async (req, res) => {
 // @access admin
 
 router.post("/", (req, res) => {
+  const imageData = req.body
+  // const imageBuffer = Buffer.from(imageData.data, "base64")
+  // req.body.data = imageBuffer
 	Project.create(req.body)
 		.then((project) => res.json({ msg: "Project added successfully" }))
 		.catch((err) => res.status(400).json({ err }));
