@@ -8,7 +8,15 @@ const projectsSchema = new mongoose.Schema({
   image : {
     type: String,
     required: false
-  }, 
+  },
+  name : {
+    type: String,
+    required: false
+  },
+  type: {
+    type: String,
+    required: false,
+  }
 });
 
 module.exports = Projects = mongoose.model('projects', projectsSchema);
