@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
 	return (
 		<footer>
-			<div className="border-t flex lg-flex-row border-gray-700 p-10 px-6 gap-2 justify-around text-xl">
+			<div className="border-t flex flex-col border-gray-700 p-10 px-6 gap-5 justify-around text-base lg:text-xl lg:flex-row">
 				<div className="max-w-[500px]">
 					<img src={Logo} alt="" />
 					<div>
@@ -22,8 +22,8 @@ const Footer = () => {
 				</div>
 
 				{/* Menu */}
-				<div className="flex flex-col gap-5">
-					<span className="font-semibold">Menu</span>
+				<div className="flex flex-col gap-3 md:gap-5 my-4">
+					<span className="font-bold">Menu</span>
           <Link to="/" className="hover:text-primary">Home</Link>
 					<Link to="/team" className="hover:text-primary">About Us</Link>
 					<Link to="/" className="hover:text-primary">Our Projects</Link>
@@ -32,8 +32,8 @@ const Footer = () => {
 				</div>
 
 				{/* Contacts */}
-				<div className="max-w-[500px] flex flex-col gap-3">
-					<div className="font-semibold pb-2">Contact</div>
+				<div className="max-w-[500px] flex flex-col gap-3 my-4">
+					<div className="font-bold pb-2">Contact</div>
 					<address>
 						<span>Address: </span> 7 Olofin Close, Off Ajoke Salako,
 						Ifako-Gbagada, Lagos, Nigeria.
