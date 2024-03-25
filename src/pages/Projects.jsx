@@ -88,7 +88,7 @@ const Projects = () => {
 					<img
 						src={HouseImg}
 						alt=""
-						className="absolute h-52 bottom-2 right-2"
+						className="relative h-40 scale-150 sm:scale-100 sm:absolute sm:h-52 bottom-7 right-2"
 					/>
 				</div>
 			</div>
