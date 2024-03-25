@@ -12,11 +12,14 @@ import TeamUpload from "./pages/TeamUpload";
 import Projects from "./pages/Projects";
 import GalleryDash from "./pages/GalleryDash";
 import { RealEstateDash } from "./pages/RealEstateDash";
+import AddRealEstate from "./pages/AddRealEstate";
+import ScrollToTop from "./utils/ScrollToTop";
 
 function App() {
 	return (
 		<>
 			<BrowserRouter>
+				<ScrollToTop></ScrollToTop>
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/team" element={<Team />} />
@@ -40,6 +43,7 @@ function App() {
 						path="/dashboard/real-estate"
 						element={<RealEstateDash />}
 					/>
+					<Route path="/dashboard/add-real-estate" element={<AddRealEstate />} />
 				</Routes>
 			</BrowserRouter>
 		</>
