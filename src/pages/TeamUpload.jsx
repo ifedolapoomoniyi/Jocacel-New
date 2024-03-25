@@ -81,30 +81,30 @@ const TeamUpload = () => {
 			initial={{ opacity: 0, x: 100 }}
 			animate={{ opacity: 1, x: 0 }}
 			exit={{ opacity: 0, x: -100 }}
-			className="flex flex-row text-xl w-full"
+			className="flex flex-row w-full md:text-xl"
 		>
 			<Sidebar />
 
-			<div className="w-full">
+			<div className="w-full p-5">
 				<Topbar />
 				<ToastContainer />
 
-				<div className="flex gap-10 items-top flex-wrap">
-					<div className=" w-[350px] rounded-lg shadow-xl">
-						<h3 className="text-xl font-semibold p-4 bg-gray-300">
+				<div className="flex flex-wrap justify-center gap-10 py-5 md:justify-normal md:items-top">
+					<div className=" w-[300px] md:w-[350px] rounded-lg shadow-xl">
+						<h3 className="p-4 text-xl font-semibold bg-gray-300">
 							Team Members
 						</h3>
 						{team.map((member) => (
 							<div
 								key={member._id}
-								className="p-2 shadow-sm px-4 flex items-center gap-3 justify-between"
+								className="flex items-center justify-between gap-3 p-2 px-4 shadow-sm"
 							>
 								<h4>{member.name}</h4>
 								<button
 									onClick={() => {
 										deleteTeamMember(member._id);
 									}}
-									className="p-2 rounded-md hover:bg-red-600 hover:text-white transition duration-300 ease-in-out"
+									className="p-2 transition duration-300 ease-in-out rounded-md hover:bg-red-600 hover:text-white"
 								>
 									<FaTrash />
 								</button>
@@ -113,8 +113,8 @@ const TeamUpload = () => {
 					</div>
 
 					<div>
-						<div className=" w-[350px] rounded-lg shadow-xl">
-							<h3 className="text-xl font-semibold p-4 bg-gray-300">
+						<div className=" w-[300px] md:w-[350px] rounded-lg shadow-xl">
+							<h3 className="p-4 text-xl font-semibold bg-gray-300">
 								Add Team Member
 							</h3>
 							<form
@@ -128,7 +128,7 @@ const TeamUpload = () => {
 										id="name"
 										onChange={formik.handleChange}
 										value={formik.values.name}
-										className="p-2 rounded-md border border-gray-300"
+										className="p-2 border border-gray-300 rounded-md"
 									/>
 								</div>
 								<div className="flex flex-col gap-4">
@@ -138,7 +138,7 @@ const TeamUpload = () => {
 										id="role"
 										onChange={formik.handleChange}
 										value={formik.values.role}
-										className="p-2 rounded-md border border-gray-300"
+										className="p-2 border border-gray-300 rounded-md"
 									/>
 								</div>
 								<div className="flex flex-col gap-4">
@@ -149,7 +149,7 @@ const TeamUpload = () => {
 										id="description"
 										onChange={formik.handleChange}
 										value={formik.values.description}
-										className="p-2 rounded-md border border-gray-300"
+										className="p-2 border border-gray-300 rounded-md"
 									></textarea>
 								</div>
 								<div className="flex flex-col gap-4">
@@ -157,13 +157,13 @@ const TeamUpload = () => {
 									<input
 										type="file"
 										id="image"
-										className="p-2 rounded-md border border-gray-300"
+										className="p-2 border border-gray-300 rounded-md"
 									/>
 								</div>
 								<div>
 									<button
 										type="submit"
-										className="bg-primary text-white p-2 rounded-md"
+										className="p-2 text-white rounded-md bg-primary"
 									>
 										Add Team Member
 									</button>
