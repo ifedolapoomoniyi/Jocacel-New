@@ -20,28 +20,28 @@ const Home = () => {
 			initial={{ opacity: 0, x: 100 }}
 			animate={{ opacity: 1, x: 0 }}
 			exit={{ opacity: 0, x: -100 }}
-			className=" text-base lg:text-xl overflow-x-hidden"
+			className="overflow-x-hidden text-base lg:text-xl"
 		>
 			<Navbar />
 
 			{/* Hero Section */}
-			<div className="landing-hero  h-screen w-full text-white flex flex-col items-center justify-center p-4">
+			<div className="flex flex-col items-center justify-center w-full h-screen p-4 text-white landing-hero">
 				<h1 className="text-3xl">
 					Top Designers and Developers of Buildings in Nigeria
 				</h1>
 				<p>Get your dream house built by the best in the industry</p>
-				<button className="flex flex-row gap-2 items-center my-2 p-2 px-4 rounded-md bg-primary text-white hover:opacity-80 transition-all">
+				<button className="flex flex-row items-center gap-2 p-2 px-4 my-2 text-white transition-all rounded-md bg-primary hover:opacity-80">
 					Contact Us <img src={Go} alt="" className="inline w-8" />
 				</button>
 			</div>
 
 			{/* About Section */}
 			<div className="">
-				<h1 className="text-4xl font-bold text-center p-4 pt-6">
+				<h1 className="p-4 pt-6 text-4xl font-bold text-center">
 					What We Do
 				</h1>
 				<div className="flex flex-col md:flex-row gap-20 p-5 pb-20 items-center max-w-[1200px] md:p-10">
-					<div className="flex-1 relative mr-5 md:mr-0">
+					<div className="relative flex-1 mr-5 md:mr-0">
 						<img src={Img1} alt="" />
 						<img
 							src={Img2}
@@ -49,7 +49,7 @@ const Home = () => {
 							className="absolute top-8 left-8 md:top-14 md:left-14"
 						/>
 					</div>
-					<div className="flex-1 flex justify-center items-center">
+					<div className="flex items-center justify-center flex-1">
 						We render comprehensive services in the spectrum of
 						construction and civil engineering, real estate and
 						facility management. With our prized human resources
@@ -64,12 +64,13 @@ const Home = () => {
 					</div>
 				</div>
 
-				<div className="flex flex-col md:flex-row gap-5 py-10 justify-between p-5 md:p-10">
+				{/* Services */}
+				<div className="flex flex-col justify-between gap-5 p-5 py-10 md:flex-row md:p-10" id="services">
 					{/* styling div */}
-					<div className="md:w-1 h-1 w-6/12 md:h-auto bg-primary self-end md:self-auto"></div>
+					<div className="self-end w-6/12 h-1 md:w-1 md:h-auto bg-primary md:self-auto"></div>
 
 					<div className="flex-1 max-w-[700px] flex flex-col items-center justify-center">
-						<h2 className="font-bold text-3xl">
+						<h2 className="text-3xl font-bold">
 							General Construction Services, Water and Wastewater
 							Systems, and General Electrical Installations
 						</h2>
@@ -88,12 +89,12 @@ const Home = () => {
 					</div>
 				</div>
 
-				<div className="flex flex-col-reverse md:flex-row gap-4 justify-between p-8 relative">
+				<div className="relative flex flex-col-reverse justify-between gap-4 p-8 md:flex-row">
 					<div>
 						<img src={Img4} alt="" />
 					</div>
 					<div className="flex flex-col justify-center">
-						<h2 className="font-bold text-3xl">
+						<h2 className="text-3xl font-bold">
 							Roads, Hardstands and Allied Facilities
 						</h2>
 						<ul className="max-w-[700px]">
@@ -108,42 +109,42 @@ const Home = () => {
 					</div>
 					{/* styling divs */}
 					<div className="w-24 h-1 bg-primary"></div>
-					<div className="h-32 w-32 -z-10 rounded-full bg-bluish absolute md:-left-28 md:-bottom-20 -right-24 top-24"></div>
+					<div className="absolute w-32 h-32 rounded-full -z-10 bg-bluish md:-left-28 md:-bottom-20 -right-24 top-24"></div>
 				</div>
 
 				{/* Other special services */}
-				<div className="flex flex-col md:flex-row gap-2 justify-between p-5 pt-10 md:p-10">
+				<div className="flex flex-col justify-between gap-2 p-5 pt-10 md:flex-row md:p-10">
 					{/* styling div */}
-					<div className="w-1 h-auto bg-primary hidden md:block"></div>
+					<div className="hidden w-1 h-auto bg-primary md:block"></div>
 					<div className="flex flex-col items-center justify-center">
 						<ul className="flex flex-col gap-2">
 							<h2 className="py-4 text-2xl font-bold">
 								Other Special Services
 							</h2>
 							<li>
-								<span className="h-4 w-4 bg-primary rounded-full inline-block mx-1"></span>{" "}
+								<span className="inline-block w-4 h-4 mx-1 rounded-full bg-primary"></span>{" "}
 								Real Estate
 							</li>
 							<li>
-								<span className="h-4 w-4 bg-primary rounded-full inline-block mx-1"></span>
+								<span className="inline-block w-4 h-4 mx-1 rounded-full bg-primary"></span>
 								Construction Management for both Green and Brown
 								Fields (factories, laboratories, etc.)
 							</li>
 							<li>
-								<span className="h-4 w-4 bg-primary rounded-full inline-block mx-1"></span>
+								<span className="inline-block w-4 h-4 mx-1 rounded-full bg-primary"></span>
 								Structural Integrity Survey of Existing
 								Structures & Structural Retrofitting Report.
 							</li>
 							<li>
-								<span className="h-4 w-4 bg-primary rounded-full inline-block mx-1"></span>{" "}
+								<span className="inline-block w-4 h-4 mx-1 rounded-full bg-primary"></span>{" "}
 								Concrete Repairs and Demolitons;
 							</li>
 							<li>
-								<span className="h-4 w-4 bg-primary rounded-full inline-block mx-1"></span>{" "}
+								<span className="inline-block w-4 h-4 mx-1 rounded-full bg-primary"></span>{" "}
 								Underpinning of Foundation.
 							</li>
 							<li>
-								<span className="h-4 w-4 bg-primary rounded-full inline-block mx-1"></span>
+								<span className="inline-block w-4 h-4 mx-1 rounded-full bg-primary"></span>
 								Mechanical, Electrical & Plumbing Installations
 							</li>
 						</ul>
@@ -159,7 +160,7 @@ const Home = () => {
 			<h2 className="p-4 text-3xl font-bold text-center">
 				Why You Should Trust Us
 			</h2>
-			<div className="pt-5 p-5 md:p-10 flex flex-col md:flex-row gap-2 items-center md:items-start">
+			<div className="flex flex-col items-center gap-2 p-5 pt-5 md:p-10 md:flex-row md:items-start">
 				<div className="pr-5 flex flex-col gap-4 max-w-[900px]">
 					<h2 className="text-2xl font-semibold">About us</h2>
 					<p>
@@ -222,9 +223,9 @@ const Home = () => {
 			</div>
 
 			{/* Mission and vision section */}
-			<div className="p-4 md:p-10 flex flex-col md:flex-row gap-3 md:gap-7">
+			<div className="flex flex-col gap-3 p-4 md:p-10 md:flex-row md:gap-7">
 				<div>
-					<h2 className="text-2xl font-bold py-5">Our Mission</h2>
+					<h2 className="py-5 text-2xl font-bold">Our Mission</h2>
 					<div className="max-w-[600px]">
 						To meet all customers’ standards of qualities and values
 						with good economic advantages to all stakeholders whilst
@@ -237,10 +238,14 @@ const Home = () => {
 					</div>
 				</div>
 				<div className="w-full md:w-auto">
-					<img src={Mission} alt="" className="w-full max-h-[500px] h-full object-cover"/>
+					<img
+						src={Mission}
+						alt=""
+						className="w-full max-h-[500px] h-full object-cover"
+					/>
 				</div>
 				<div className="flex flex-col justify-end max-w-[500px]">
-					<h2 className="text-2xl font-bold py-5">Our Vision</h2>
+					<h2 className="py-5 text-2xl font-bold">Our Vision</h2>
 					<div>
 						To establish an indigenous turnkey construction company
 						with world class values and reputation.
@@ -249,10 +254,10 @@ const Home = () => {
 			</div>
 
 			{/* Projects and real estate */}
-			<div className="text-white text-xl md:text-2xl font-light flex flex-col md:flex-row justify-center items-center md:items-stretch m-8 my-16 gap-1 md:gap-0">
+			<div className="flex flex-col items-center justify-center gap-1 m-8 my-16 text-xl font-light text-white md:text-2xl md:flex-row md:items-stretch md:gap-0">
 				<div className="bg-primary rounded-2xl shadow-lg p-6 flex flex-col gap-2 max-w-[500px]">
 					<div>Projects</div>
-					<h2 className="text-bold text-3xl font-semibold py-2">
+					<h2 className="py-2 text-3xl font-semibold text-bold">
 						Our Work
 					</h2>
 					<div>
@@ -260,9 +265,12 @@ const Home = () => {
 						intelligent effort. Here are some of our recent building
 						projects
 					</div>
-					<Link to="/gallery" className="text-2xl flex items-center gap-2 justify-end pt-4 animate-pulse">
+					<Link
+						to="/gallery"
+						className="flex items-center justify-end gap-2 pt-4 text-2xl animate-pulse"
+					>
 						View Our Work{" "}
-						<span className="border-white border p-2 inline-flex items-center justify-center rounded-full hover:animate-ping cursor-pointer">
+						<span className="inline-flex items-center justify-center p-2 border border-white rounded-full cursor-pointer hover:animate-ping">
 							<img src={Go} alt="" className="inline" />
 						</span>
 					</Link>
@@ -270,7 +278,7 @@ const Home = () => {
 
 				<div className="bg-secondary rounded-2xl shadow-lg p-4 flex flex-col gap-2 max-w-[500px]">
 					<div>Real Estate</div>
-					<h2 className="font-semibold text-3xl py-2">
+					<h2 className="py-2 text-3xl font-semibold">
 						Our Properties
 					</h2>
 					<div>
@@ -278,9 +286,12 @@ const Home = () => {
 						intelligent effort. Here are some of our recent building
 						projects
 					</div>
-					<Link to="/real-estate" className="hover:animate-none cursor-pointer animate-pulse flex items-center justify-end gap-2 pt-4">
+					<Link
+						to="/real-estate"
+						className="flex items-center justify-end gap-2 pt-4 cursor-pointer hover:animate-none animate-pulse"
+					>
 						View Our Properties{" "}
-						<span className="border-white border p-2 inline-flex items-center justify-center rounded-full hover:animate-ping ">
+						<span className="inline-flex items-center justify-center p-2 border border-white rounded-full hover:animate-ping ">
 							<img src={Go} alt="" className="inline" />
 						</span>
 					</Link>
