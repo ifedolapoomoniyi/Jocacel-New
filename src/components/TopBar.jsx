@@ -2,18 +2,18 @@ import Avatar from "../assets/Avatar.png";
 
 const TopBar = () => {
 	return (
-		<div className="flex flex-row justify-between mb-3 p-5 w-full">
+		<div className="flex flex-row justify-between w-full mb-3 text-sm md:text-base">
 			<div>
 				<h2>Admin Panel</h2>
-				<div className="text-sm text-gray-600">
+				<div className="text-xs text-gray-600 md:text-sm">
 					Control everything here
 				</div>
 			</div>
-			<div className="flex flex-row gap-2 items-center">
+			<div className="flex flex-row items-center gap-1 md:gap-2">
 				<img src={Avatar} alt="" />
 				<span className="flex flex-col">
 					<span className="font-semibold">Abolarin Fakeye</span>
-					<span className="text-base">Admin</span>
+					<span className="text-xs md:text-base">Admin</span>
 				</span>
 			</div>
 		</div>
