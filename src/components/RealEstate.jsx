@@ -1,7 +1,8 @@
 import { MdOutlineBed } from "react-icons/md";
 import { LuParkingSquare } from "react-icons/lu";
 import { FaBath } from "react-icons/fa";
-import BtnPrimary from "./BtnPrimary";
+import Go from "../assets/icons/Go.svg";
+import { Link } from "react-router-dom";
 
 const RealEstate = ({
 	location,
@@ -14,21 +15,21 @@ const RealEstate = ({
 	image,
 }) => {
 	return (
-		<div className="flex flex-row gap-3 lg:p-10 p-5 border-b-2 justify-between">
-			<div className="max-w-[500px] flex flex-col gap-3">
-				<div className="text-primary text-xl">{location}</div>
-				<div className="text-2xl">{name}</div>
-				<div>
-					<div className="font-semibold text-xl">
+		<div className="flex flex-col justify-between gap-3 p-5 border-b-2 md:flex-row lg:p-10">
+			<div className="max-w-[500px] flex flex-col gap-2 md:gap-3 flex-1">
+				<div className="text-primary md:text-xl">{location}</div>
+				<div className="text-xl md:text-2xl">{name}</div>
+				<div className="hidden md:block">
+					<div className="text-xl font-semibold">
 						Property Features
 					</div>
-					<div className="text-base px-2 flex flex-row gap-2 items-center">
+					<div className="flex flex-row items-center gap-2 px-2 text-base">
 						<MdOutlineBed /> {rooms} Bedrooms
 					</div>
-					<div className="text-base px-2 flex flex-row gap-2 items-center">
+					<div className="flex flex-row items-center gap-2 px-2 text-base">
 						<FaBath /> {bathrooms} Bathrooms
 					</div>
-					<div className="text-base px-2 flex flex-row gap-2 items-center">
+					<div className="flex flex-row items-center gap-2 px-2 text-base">
 						<LuParkingSquare /> {parking} Parking spaces
 					</div>
 				</div>
@@ -36,20 +37,36 @@ const RealEstate = ({
 
 			{/* Image */}
 			<div className="">
-				<img src={image} alt=""  className="h-[300px]"/>
+				<img src={image} alt="" className="h-[300px]" />
+			</div>
+
+			<div className="md:hidden">
+				<div className="text-lg font-semibold">Property Features</div>
+				<div className="flex flex-row items-center gap-2 px-2 text-sm">
+					<MdOutlineBed /> {rooms} Bedrooms
+				</div>
+				<div className="flex flex-row items-center gap-2 px-2 text-sm">
+					<FaBath /> {bathrooms} Bathrooms
+				</div>
+				<div className="flex flex-row items-center gap-2 px-2 text-sm">
+					<LuParkingSquare /> {parking} Parking spaces
+				</div>
 			</div>
 
 			{/* Details */}
 			<div className="flex-1 max-w-[500px] flex flex-col gap-3">
-				<div>
+				<div className="text-xl">
 					Price:{" "}
-					<h6 className="text-primary inline font-semibold">
+					<h6 className="inline font-semibold text-primary">
 						#{price}
 					</h6>
 				</div>
 				<div>{details}</div>
 				<div>
-					<BtnPrimary white text="View Property" />
+					<Link to={'/real-estate/fdd'} className="flex items-center gap-2 p-2 px-4 text-white transition-all rounded-lg shadow-sm bg-primary hover:opacity-80 w-fit">
+						View property
+						<img src={Go} alt="" className="inline w-8 " />
+					</Link>
 				</div>
 			</div>
 		</div>
