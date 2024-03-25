@@ -6,7 +6,7 @@ import House1 from "../assets/House1.png"
 
 const Catalogue = () => {
 	return (
-		<div className="text-xl">
+		<div className="md:text-xl">
 			<Navbar />
 
 			{/* Hero */}

@@ -33,12 +33,12 @@ const Dashboard = () => {
 		FetchRealEstate();
 	}, []);
 	return (
-		<motion.div className="text-xl flex w-full">
+		<motion.div className="flex w-full md:text-xl">
 			<Sidebar />
 
 			<div className="p-5">
 				<TopBar />
-				<div className="flex flex-row flex-wrap gap-4 items-center justify-center lg:justify-normal">
+				<div className="flex flex-row flex-wrap items-center justify-center gap-4 lg:justify-normal">
 					<div className="dashBg text-white w-[232px] h-[140px] p-3 py-6 flex flex-col justify-between">
 						<IoPeopleOutline />
 						<div>Team Members</div>
@@ -56,7 +56,7 @@ const Dashboard = () => {
 				</div>
 
 				{/* Cards */}
-				<div className="flex gap-5 flex-wrap m-10">
+				<div className="flex flex-wrap justify-center gap-5 m-3 md:m-10 md:justify-normal">
 					<AdminProject
 						image={RealEstate1}
 						text={projects?.[lastProject]?.details}
