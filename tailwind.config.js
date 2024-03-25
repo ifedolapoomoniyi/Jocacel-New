@@ -12,7 +12,8 @@ export default {
       },
       colors: {
         "primary" : "rgba(43, 121, 46, 1)",
-        "secondary" : "rgba(35, 147, 213, 1)"
+        "secondary" : "rgba(35, 147, 213, 1)",
+        "bluish": "rgba(35, 147, 213, 1)"
       }
     },
   },
