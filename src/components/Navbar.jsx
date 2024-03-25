@@ -3,6 +3,7 @@ import Logo from "../assets/logo.png";
 import { useState } from "react";
 import { useCallback } from "react";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 	const [isNavOpen, setIsNavOpen] = useState(false);
@@ -48,85 +49,108 @@ const Navbar = () => {
 		: (document.body.style.overflow = "auto");
 
 	return (
-		<div
-			className={
-				isNavOpen
-					? "bg-white flex flex-col md:flex-row md:justify-between md:items-center h-full md:h-auto z-10 fixed left-0 w-[315px] md:static md:w-auto transition-all duration-500"
-					: "bg-white flex flex-col md:flex-row md:justify-between md:items-center h-full md:h-auto z-10 fixed left-[-100%] w-[315px] md:static md:w-auto transition-all duration-500"
-			}
-		>
+		<div>
 			{/* Logo */}
-			{/* <div>
-				<div className="flex flex-row items-center absolute lg:hidden bg-white w-full">
+			<div>
+				<div className="absolute flex flex-row items-center w-full bg-white lg:hidden">
 					<Link to="/">
-						<img src={Logo} alt="Logo" className="logo pt-3"/>
+						<img src={Logo} alt="Logo" className="h-16" />
+					</Link>
+					<h3 className="font-semibold text-xl py-[2px]">KADAF</h3>
+				</div>
+			</div>
+			<div
+				className={
+					isNavOpen
+						? "bg-white flex flex-col md:flex-row md:justify-between md:items-center h-full md:h-auto z-10 fixed left-0 w-[315px] md:static md:w-auto transition-all duration-500"
+						: "bg-white flex flex-col md:flex-row md:justify-between md:items-center h-full md:h-auto z-10 fixed left-[-100%] w-[315px] md:static md:w-auto transition-all duration-500"
+				}
+			>
+				{/* Logo */}
+				{/* <div>
+				<div className="absolute flex flex-row items-center w-full bg-white lg:hidden">
+					<Link to="/">
+						<img src={Logo} alt="Logo" className="pt-3 logo"/>
 					</Link>
 					<span className="logo-text py-[2px]">JOCACEL</span>
 				</div>
 			</div> */}
 
-			<div className="flex gap-4 lg:gap-8 flex-col md:flex-row items-center justify-center p-2 w-full h-full">
-				<NavLink
-					to="/"
-					className={({ isActive }) => {
-						return isActive ? "text-primary" : "hover:text-primary";
-					}}
-				>
-					Home
-				</NavLink>
-				<NavLink
-					className={({ isActive }) => {
-						return isActive ? "text-primary" : "hover:text-primary";
-					}}
-					to="/team"
-				>
-					Team
-				</NavLink>
-				<NavLink
-					className={({ isActive }) => {
-						return isActive ? "text-primary" : "hover:text-primary";
-					}}
-					to="/services"
-				>
-					Services
-				</NavLink>
+				<div className="flex flex-col items-center justify-center w-full h-full gap-4 p-2 lg:gap-8 md:flex-row">
+					<NavLink
+						to="/"
+						className={({ isActive }) => {
+							return isActive
+								? "text-primary"
+								: "hover:text-primary";
+						}}
+					>
+						Home
+					</NavLink>
+					<NavLink
+						className={({ isActive }) => {
+							return isActive
+								? "text-primary"
+								: "hover:text-primary";
+						}}
+						to="/team"
+					>
+						Team
+					</NavLink>
+					<NavLink
+						className={({ isActive }) => {
+							return isActive
+								? "text-primary"
+								: "hover:text-primary";
+						}}
+						to="/#services"
+					>
+						Services
+					</NavLink>
 
-				{/* Logo */}
-				<div className="px-5 absolute top-2 md:static">
-					<img src={Logo} alt="" className="h-12" />
+					{/* Logo */}
+					<div className="absolute px-5 top-2 md:static">
+						<img src={Logo} alt="" className="h-12" />
+					</div>
+
+					<NavLink
+						className={({ isActive }) => {
+							return isActive
+								? "text-primary"
+								: "hover:text-primary";
+						}}
+						to="/real-estate"
+					>
+						Real Estate
+					</NavLink>
+					<NavLink
+						className={({ isActive }) => {
+							return isActive
+								? "text-primary"
+								: "hover:text-primary";
+						}}
+						to="/gallery"
+					>
+						Projects
+					</NavLink>
+					<NavLink
+						className={({ isActive }) => {
+							return isActive
+								? "text-primary"
+								: "hover:text-primary";
+						}}
+						to="/contact"
+					>
+						Contact Us
+					</NavLink>
 				</div>
 
-				<NavLink
-					className={({ isActive }) => {
-						return isActive ? "text-primary" : "hover:text-primary";
-					}}
-					to="/real-estate"
-				>
-					Real Estate
-				</NavLink>
-				<NavLink
-					className={({ isActive }) => {
-						return isActive ? "text-primary" : "hover:text-primary";
-					}}
-					to="/gallery"
-				>
-					Projects
-				</NavLink>
-				<NavLink
-					className={({ isActive }) => {
-						return isActive ? "text-primary" : "hover:text-primary";
-					}}
-					to="/contact"
-				>
-					Contact Us
-				</NavLink>
-			</div>
-
-			{/* Hamburger */}
-			<div className={isNavOpen ? "hamburger active" : "hamburger"}>
-				<span className="bar side"></span>
-				<span className="bar side"></span>
-				<span className="bar side"></span>
+				{/* Hamburger */}
+				<div className={isNavOpen ? "hamburger active" : "hamburger"}>
+					<span className="bar side"></span>
+					<span className="bar side"></span>
+					<span className="bar side"></span>
+				</div>
 			</div>
 		</div>
 	);
