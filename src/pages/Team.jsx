@@ -40,7 +40,7 @@ const Team = () => {
 			</div>
 
 			{/* Meet the team */}
-			<div className="p-10 flex flex-col gap-4">
+		<div className="p-5 md:p-10 flex flex-col gap-4">
 				<h1 className="text-3xl font-bold text-center pb-4">
 					Meet The Team
 				</h1>

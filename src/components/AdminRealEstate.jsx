@@ -44,13 +44,13 @@ const AdminRealEstate = ({
 	};
 
 	return (
-		<div>
+		<div className="max-w-[600px]">
 			{window.location.pathname !== "/dashboard/real-estate" ? (
-				<div className="flex justify-between items-center p-5">
-					<div className="text-2xl font-bold">
+				<div className="flex items-center justify-between p-3 md:p-5">
+					<div className="text-xl font-bold md:text-2xl">
 						Real Estate Properties
 					</div>
-					<button className="text-primary flex items-center gap-2 text-lg">
+					<button className="flex items-center gap-2 text-lg text-primary">
 						View all <FaArrowAltCircleRight />
 					</button>
 				</div>
@@ -58,35 +58,35 @@ const AdminRealEstate = ({
 				""
 			)}
 
-			<div className="flex gap-4 shadow-xl border border-gray-400 rounded-lg p-4">
-				<div>
-					<div>
+			<div className="flex flex-col items-center gap-4 p-4 border border-gray-400 rounded-lg shadow-xl md: md:flex-row md:items-stretch max-w-[400px] md:max-w-[1200px]">
+				<div className="w-full md:w-fit">
+					<div className="w-full">
 						<img
 							src={image}
 							alt=""
-							className="aspect-square h-[200px]"
+							className=" w-full md:w-fit md:aspect-square md:h-[200px]"
 						/>
 					</div>
 				</div>
 
 				<div className="relative">
 					<div>{text}</div>
-					<div className="text-gray-700 text-sm">{location}</div>
+					<div className="text-sm text-gray-700">{location}</div>
 					<div>
-						<div className="text-base px-2 flex flex-row gap-2 items-center">
+						<div className="flex flex-row items-center gap-2 px-2 text-base">
 							<MdOutlineBed /> {rooms} Bedrooms
 						</div>
-						<div className="text-base px-2 flex flex-row gap-2 items-center">
+						<div className="flex flex-row items-center gap-2 px-2 text-base">
 							<FaBath /> {bathrooms} Bathrooms
 						</div>
-						<div className="text-base px-2 flex flex-row gap-2 items-center">
+						<div className="flex flex-row items-center gap-2 px-2 text-base">
 							<LuParkingSquare /> {parking} Parking spaces
 						</div>
 					</div>
 
 					<button
 						onClick={handleToggle}
-						className="p-2 hover:bg-slate-200 rounded absolute right-0 top-3"
+						className="absolute right-0 p-2 rounded hover:bg-slate-200 top-3"
 					>
 						<TbDotsVertical />
 					</button>
@@ -97,7 +97,7 @@ const AdminRealEstate = ({
 								onClick={() => {
 									deleteProject(id);
 								}}
-								className="flex flex-row items-center hover:bg-red-400 text-red-500 gap-2 p-2 hover:text-white rounded-lg shadow-md absolute right-0 top-0 bg-white"
+								className="absolute top-0 right-0 flex flex-row items-center gap-2 p-2 text-red-500 bg-white rounded-lg shadow-md hover:bg-red-400 hover:text-white"
 							>
 								<FaTrash /> Delete project
 							</div>
@@ -106,7 +106,7 @@ const AdminRealEstate = ({
 						""
 					)}
 
-					<h4 className="text-primary font-bold text-xl place-items-end py-4">
+					<h4 className="py-4 text-xl font-bold text-primary place-items-end">
 						# {price}
 					</h4>
 				</div>

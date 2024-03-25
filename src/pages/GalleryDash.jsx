@@ -55,14 +55,14 @@ const GalleryDash = () => {
 			initial={{ opacity: 0, x: 100 }}
 			animate={{ opacity: 1, x: 0 }}
 			exit={{ opacity: 0, x: -100 }}
-			className="flex flex-row text-xl"
+			className="flex flex-row md:text-xl"
 		>
 			<Sidebar />
 
-			<div className="w-full">
+			<div className="w-full p-5">
 				<TopBar />
 
-				<div>
+				<div className="md:border-none pb-5 border-b border-b-stone-600">
 					<form onSubmit={formik.handleSubmit} action={(e=> {e.preventDefault()})} className="flex flex-col gap-3 w-[300px]">
             <h3 className="font-semibold p-2">Project Title</h3>
             <textarea name="details" id="details" value={formik.values.details} onChange={formik.handleChange} cols="30" rows="3" className="resize-none rounded-lg border-gray-200 border p-4"></textarea>
@@ -73,7 +73,7 @@ const GalleryDash = () => {
 				<div>
 					<h2 className="font-semibold p-5">Past Projects</h2>
 
-					<div className="flex flex-row gap-8 flex-wrap">
+					<div className="flex flex-row gap-8 flex-wrap justify-center md:justify-normal">
 						{teamData.map((item, index) => (
 							<AdminProject
 								key={index}
