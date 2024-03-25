@@ -12,6 +12,7 @@ import About2 from "../assets/About2.png";
 import About3 from "../assets/About3.png";
 import About4 from "../assets/About4.png";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Home = () => {
 	return (
@@ -19,12 +20,12 @@ const Home = () => {
 			initial={{ opacity: 0, x: 100 }}
 			animate={{ opacity: 1, x: 0 }}
 			exit={{ opacity: 0, x: -100 }}
-			className="text-xl"
+			className=" text-base lg:text-xl overflow-x-hidden"
 		>
 			<Navbar />
 
 			{/* Hero Section */}
-			<div className="landing-hero  h-screen w-full text-white flex flex-col items-center justify-center">
+			<div className="landing-hero  h-screen w-full text-white flex flex-col items-center justify-center p-4">
 				<h1 className="text-3xl">
 					Top Designers and Developers of Buildings in Nigeria
 				</h1>
@@ -35,17 +36,17 @@ const Home = () => {
 			</div>
 
 			{/* About Section */}
-			<div className="p-10">
+			<div className="">
 				<h1 className="text-4xl font-bold text-center p-4 pt-6">
 					What We Do
 				</h1>
-				<div className="flex flex-row gap-5 p-5 pb-20">
-					<div className="flex-1 relative">
+				<div className="flex flex-col md:flex-row gap-20 p-5 pb-20 items-center max-w-[1200px] md:p-10">
+					<div className="flex-1 relative mr-5 md:mr-0">
 						<img src={Img1} alt="" />
 						<img
 							src={Img2}
 							alt=""
-							className="absolute top-14 left-14"
+							className="absolute top-8 left-8 md:top-14 md:left-14"
 						/>
 					</div>
 					<div className="flex-1 flex justify-center items-center">
@@ -63,9 +64,9 @@ const Home = () => {
 					</div>
 				</div>
 
-				<div className="flex flex-row gap-5 py-10 justify-between">
+				<div className="flex flex-col md:flex-row gap-5 py-10 justify-between p-5 md:p-10">
 					{/* styling div */}
-					<div className="w-1 h-auto bg-primary"></div>
+					<div className="md:w-1 h-1 w-6/12 md:h-auto bg-primary self-end md:self-auto"></div>
 
 					<div className="flex-1 max-w-[700px] flex flex-col items-center justify-center">
 						<h2 className="font-bold text-3xl">
@@ -82,12 +83,12 @@ const Home = () => {
 							supervision and managerial works.
 						</div>
 					</div>
-					<div>
+					<div className="flex-1">
 						<img src={Img3} alt="" />
 					</div>
 				</div>
 
-				<div className="flex flex-row gap-4 justify-between p-8">
+				<div className="flex flex-col-reverse md:flex-row gap-4 justify-between p-8 relative">
 					<div>
 						<img src={Img4} alt="" />
 					</div>
@@ -105,47 +106,61 @@ const Home = () => {
 							<li>Drainage systems.</li>
 						</ul>
 					</div>
+					{/* styling divs */}
 					<div className="w-24 h-1 bg-primary"></div>
+					<div className="h-32 w-32 -z-10 rounded-full bg-bluish absolute md:-left-28 md:-bottom-20 -right-24 top-24"></div>
 				</div>
 
 				{/* Other special services */}
-				<div className="flex flex-row gap-2 justify-between p-10">
+				<div className="flex flex-col md:flex-row gap-2 justify-between p-5 pt-10 md:p-10">
 					{/* styling div */}
-					<div className="w-1 h-auto bg-primary"></div>
+					<div className="w-1 h-auto bg-primary hidden md:block"></div>
 					<div className="flex flex-col items-center justify-center">
-						<ul>
-							<h2 className="text-2xl font-bold">
+						<ul className="flex flex-col gap-2">
+							<h2 className="py-4 text-2xl font-bold">
 								Other Special Services
 							</h2>
-							<li>Real Estate</li>
 							<li>
+								<span className="h-4 w-4 bg-primary rounded-full inline-block mx-1"></span>{" "}
+								Real Estate
+							</li>
+							<li>
+								<span className="h-4 w-4 bg-primary rounded-full inline-block mx-1"></span>
 								Construction Management for both Green and Brown
 								Fields (factories, laboratories, etc.)
 							</li>
 							<li>
+								<span className="h-4 w-4 bg-primary rounded-full inline-block mx-1"></span>
 								Structural Integrity Survey of Existing
 								Structures & Structural Retrofitting Report.
 							</li>
-							<li>Concrete Repairs and Demolitons;</li>
-							<li>Underpinning of Foundation.</li>
 							<li>
+								<span className="h-4 w-4 bg-primary rounded-full inline-block mx-1"></span>{" "}
+								Concrete Repairs and Demolitons;
+							</li>
+							<li>
+								<span className="h-4 w-4 bg-primary rounded-full inline-block mx-1"></span>{" "}
+								Underpinning of Foundation.
+							</li>
+							<li>
+								<span className="h-4 w-4 bg-primary rounded-full inline-block mx-1"></span>
 								Mechanical, Electrical & Plumbing Installations
 							</li>
 						</ul>
 					</div>
 
-					<div>
+					<div className="py-3">
 						<img src={Img5} alt="" />
 					</div>
 				</div>
 			</div>
 
 			{/* About us */}
-			<h2 className="text-3xl font-bold text-center">
+			<h2 className="p-4 text-3xl font-bold text-center">
 				Why You Should Trust Us
 			</h2>
-			<div className="p-10 flex gap-2">
-				<div className="pr-5 flex flex-col gap-4 max-w-[700px]">
+			<div className="pt-5 p-5 md:p-10 flex flex-col md:flex-row gap-2 items-center md:items-start">
+				<div className="pr-5 flex flex-col gap-4 max-w-[900px]">
 					<h2 className="text-2xl font-semibold">About us</h2>
 					<p>
 						KADAF Properties Limited Liability Partnership is an
@@ -185,24 +200,29 @@ const Home = () => {
 					</p>
 				</div>
 
-				<div className="flex flex-row flex-wrap gap-2 pl-4">
-					<span>
-						<img src={About1} alt="" />
-					</span>
-					<span>
-						<img src={About2} alt="" />
-					</span>
-					<span>
-						<img src={About3} alt="" />
-					</span>
-					<span>
-						<img src={About4} alt="" />
-					</span>
+				<div className="flex flex-row gap-2 smd:pl-4 md:min-w-[300px] lg:min-w-[400px] mt-8 w-full md:w-auto">
+					<div className="flex flex-col gap-2">
+						<span>
+							<img src={About1} alt="" />
+						</span>
+						<span>
+							<img src={About3} alt="" />
+						</span>
+					</div>
+					<div className="flex flex-col gap-2">
+						<span>
+							<img src={About2} alt="" />
+						</span>
+
+						<span>
+							<img src={About4} alt="" />
+						</span>
+					</div>
 				</div>
 			</div>
 
 			{/* Mission and vision section */}
-			<div className="p-10 flex flex-row gap-5">
+			<div className="p-4 md:p-10 flex flex-col md:flex-row gap-3 md:gap-7">
 				<div>
 					<h2 className="text-2xl font-bold py-5">Our Mission</h2>
 					<div className="max-w-[600px]">
@@ -216,8 +236,8 @@ const Home = () => {
 						<br />A one-stop shop for real estate.
 					</div>
 				</div>
-				<div className="px-10">
-					<img src={Mission} alt="" />
+				<div className="w-full md:w-auto">
+					<img src={Mission} alt="" className="w-full max-h-[500px] h-full object-cover"/>
 				</div>
 				<div className="flex flex-col justify-end max-w-[500px]">
 					<h2 className="text-2xl font-bold py-5">Our Vision</h2>
@@ -229,7 +249,7 @@ const Home = () => {
 			</div>
 
 			{/* Projects and real estate */}
-			<div className="text-white text-2xl font-light flex flex-row justify-center m-8 my-16">
+			<div className="text-white text-xl md:text-2xl font-light flex flex-col md:flex-row justify-center items-center md:items-stretch m-8 my-16 gap-1 md:gap-0">
 				<div className="bg-primary rounded-2xl shadow-lg p-6 flex flex-col gap-2 max-w-[500px]">
 					<div>Projects</div>
 					<h2 className="text-bold text-3xl font-semibold py-2">
@@ -240,12 +260,12 @@ const Home = () => {
 						intelligent effort. Here are some of our recent building
 						projects
 					</div>
-					<div className="text-2xl flex items-center gap-2 justify-end pt-4 animate-pulse">
+					<Link to="/gallery" className="text-2xl flex items-center gap-2 justify-end pt-4 animate-pulse">
 						View Our Work{" "}
 						<span className="border-white border p-2 inline-flex items-center justify-center rounded-full hover:animate-ping cursor-pointer">
 							<img src={Go} alt="" className="inline" />
 						</span>
-					</div>
+					</Link>
 				</div>
 
 				<div className="bg-secondary rounded-2xl shadow-lg p-4 flex flex-col gap-2 max-w-[500px]">
@@ -258,12 +278,12 @@ const Home = () => {
 						intelligent effort. Here are some of our recent building
 						projects
 					</div>
-					<div className="hover:animate-none cursor-pointer animate-pulse flex items-center justify-end gap-2 pt-4">
-						View Our Projects{" "}
+					<Link to="/real-estate" className="hover:animate-none cursor-pointer animate-pulse flex items-center justify-end gap-2 pt-4">
+						View Our Properties{" "}
 						<span className="border-white border p-2 inline-flex items-center justify-center rounded-full hover:animate-ping ">
 							<img src={Go} alt="" className="inline" />
 						</span>
-					</div>
+					</Link>
 				</div>
 			</div>
 
