@@ -1,4 +1,4 @@
-import LoginImg from "../assets/loginImg.png";
+import LoginImg from "../assets/LoginImg.png";
 import Logo from "../assets/logo.png";
 
 const Login = () => {
