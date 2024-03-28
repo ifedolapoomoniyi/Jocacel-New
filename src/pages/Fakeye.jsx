@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import TeamImg from "../assets/TeamImg.png";
 import BtnPrimary from "../components/BtnPrimary";
-import Buildings from "../assets/icons/Buildings.svg";
+import Buildings from "../assets/icons/buildings.svg";
 import Footer from "../components/Footer";
 import { useState, useEffect } from "react";
 import { BASE_URL } from "../utils";
@@ -32,7 +32,7 @@ const Fakeye = () => {
 					<img
 						src={Buildings}
 						alt=""
-						className="absolute left-3 top-4 z-0"
+						className="absolute z-0 left-3 top-4"
 					/>
 					<img
 						src={Buildings}
@@ -72,7 +72,7 @@ const Fakeye = () => {
 				</div>
 
 				<div className="flex-1">
-					<div className="text-2xl font-semibold p-3">
+					<div className="p-3 text-2xl font-semibold">
 						{teamData.name}
 					</div>
 					<div>
