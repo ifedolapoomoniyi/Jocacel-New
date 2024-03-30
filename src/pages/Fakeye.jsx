@@ -32,7 +32,7 @@ const Fakeye = () => {
 					<img
 						src={Buildings}
 						alt=""
-						className="absolute z-0 left-3 top-4"
+						className="absolute left-3 top-4 -z-10"
 					/>
 					<img
 						src={Buildings}
@@ -67,7 +67,7 @@ const Fakeye = () => {
 					<img
 						src={Buildings}
 						alt=""
-						className="absolute top-5 left-[30%]"
+						className="absolute top-5 left-[30%] -z-10"
 					/>
 				</div>
 
@@ -76,7 +76,7 @@ const Fakeye = () => {
 						{teamData.name}
 					</div>
 					<div>
-						<img src={TeamImg} alt="" className="z-10" />
+						<img src={TeamImg} alt="" className="z-10 rounded-xl shadow-lg" />
 					</div>
 				</div>
 

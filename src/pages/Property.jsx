@@ -18,7 +18,7 @@ const Property = () => {
 				<div className="max-w-[700px]">
 					<ImgSlider />
 				</div>
-				<div className="flex flex-col gap-4 justify-evenly">
+				<div className="flex flex-col gap-4 justify-evenly lg:max-h-[450px]">
 					<h3 className="font-semibold">
 						Exquisitely Finished & Spacious 5 Bedroom Semidetached
 						Duplex...

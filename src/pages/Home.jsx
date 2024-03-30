@@ -26,10 +26,10 @@ const Home = () => {
 
 			{/* Hero Section */}
 			<div className="flex flex-col items-center justify-center w-full h-screen p-4 text-white landing-hero">
-				<h1 className="text-3xl">
+				<h1 className="text-3xl text-center">
 					Top Designers and Developers of Buildings in Nigeria
 				</h1>
-				<p>Get your dream house built by the best in the industry</p>
+				<p className="text-center">Get your dream house built by the best in the industry</p>
 				<button className="flex flex-row items-center gap-2 p-2 px-4 my-2 text-white transition-all rounded-md bg-primary hover:opacity-80">
 					Contact Us <img src={Go} alt="" className="inline w-8" />
 				</button>
@@ -70,7 +70,7 @@ const Home = () => {
 					<div className="self-end w-6/12 h-1 md:w-1 md:h-auto bg-primary md:self-auto"></div>
 
 					<div className="flex-1 max-w-[700px] flex flex-col items-center justify-center">
-						<h2 className="text-3xl font-bold">
+						<h2 className="text-3xl font-bold py-3">
 							General Construction Services, Water and Wastewater
 							Systems, and General Electrical Installations
 						</h2>

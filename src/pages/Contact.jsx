@@ -16,7 +16,7 @@ const Contact = () => {
 			<div className="flex flex-col gap-3 m-5 md:gap-5 md:m-10 md:flex-row justify-center md:justify-evenly min-h-[70vh]">
 				<div className="max-w-[600px]">
 					<h2 className="my-2 text-2xl font-bold md:text-3xl">
-						Hav*e a Question? Get in touch with us now
+						Have a Question? Get in touch with us now
 					</h2>
 					<div>
 						Quality is never an accident, it is always the result of

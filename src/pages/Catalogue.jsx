@@ -2,7 +2,7 @@ import BtnPrimary from "../components/BtnPrimary";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import RealEstate from "../components/RealEstate";
-import House1 from "../assets/House1.png"
+import House1 from "../assets/House1.png";
 
 const Catalogue = () => {
 	return (
@@ -29,8 +29,8 @@ const Catalogue = () => {
 					Browse Our Catalogue
 				</h2>
 				<div className="text-center w-full p-3 py-3 max-w-[700px]">
-					I&apos;m trying to decide on Body text to use. But anyway,
-					reach out to us for all your construction needs
+					Check out some of the properties currently on sale in our
+					catalogue. Your family home might just be here.
 				</div>
 			</div>
 
