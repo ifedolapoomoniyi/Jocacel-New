@@ -37,7 +37,7 @@ const RealEstate = ({
 
 			{/* Image */}
 			<div className="">
-				<img src={image} alt="" className="h-[300px]" />
+				<img src={image} alt="Property Image" className="h-[300px] rounded-xl px-2" />
 			</div>
 
 			<div className="md:hidden">

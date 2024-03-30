@@ -3,7 +3,7 @@ const Gallery = ({image, details}) => {
     <div>
       <div className="relative rounded-lg">
         <img className="h-[300px] rounded-lg w-auto md:max-w-[500px]" src={image} alt="" />
-        <div className="absolute p-2 text-xl font-semibold text-white bg-black bottom-3 bg-opacity-40">{details}</div>
+        <div className="absolute p-2 text-xl font-semibold text-white bg-black bottom-3 bg-opacity-40 backdrop-blur-[2px]">{details}</div>
       </div>
     </div>
   )
