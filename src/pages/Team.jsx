@@ -1,8 +1,6 @@
-import BtnPrimary from "../components/BtnPrimary";
-import Navbar from "../components/Navbar";
-import TeamCard from "../components/TeamCard";
-import TeamImg from "../assets/TeamImg.png";
-import Footer from "../components/Footer";
+import { Navbar, Footer, TeamCard, BtnPrimary } from "../components";
+import { TeamImg } from "../assets";
+
 import { motion } from "framer-motion";
 
 import { useState, useEffect } from "react";

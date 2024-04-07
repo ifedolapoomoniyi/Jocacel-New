@@ -1,5 +1,4 @@
-import Sidebar from "../components/Sidebar"
-import TopBar from "../components/TopBar"
+import { Sidebar, TopBar } from '../components'
 
 const AddRealEstate = () => {
   return (

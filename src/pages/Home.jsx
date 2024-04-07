@@ -40,7 +40,7 @@ const Home = () => {
 				<h1 className="p-4 pt-6 text-4xl font-bold text-center">
 					What We Do
 				</h1>
-				<div className="flex flex-col md:flex-row gap-20 p-5 pb-20 items-center max-w-[1200px] md:p-10">
+				<div className="flex flex-col md:flex-row gap-20 p-5 pb-20 items-center max-w-[1500px] md:p-10 justify-between w-full">
 					<div className="relative flex-1 mr-5 md:mr-0">
 						<img src={Img1} alt="" />
 						<img

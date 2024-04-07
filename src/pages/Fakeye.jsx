@@ -1,8 +1,6 @@
-import Navbar from "../components/Navbar";
-import TeamImg from "../assets/TeamImg.png";
-import BtnPrimary from "../components/BtnPrimary";
-import Buildings from "../assets/icons/buildings.svg";
-import Footer from "../components/Footer";
+import { Navbar, Footer, BtnPrimary } from "../components";
+import { buildings, TeamImg } from "../assets";
+
 import { useState, useEffect } from "react";
 import { BASE_URL } from "../utils";
 import { useParams } from "react-router-dom";
@@ -30,42 +28,42 @@ const Fakeye = () => {
 				{/* Absolutely positioned styling */}
 				<div className="flex flex-col">
 					<img
-						src={Buildings}
+						src={buildings}
 						alt=""
 						className="absolute left-3 top-4 -z-10"
 					/>
 					<img
-						src={Buildings}
+						src={buildings}
 						alt=""
 						className="absolute right-2 top-2"
 					/>
 					<img
-						src={Buildings}
+						src={buildings}
 						alt=""
 						className="absolute bottom-3 right-2/4"
 					/>
 					<img
-						src={Buildings}
+						src={buildings}
 						alt=""
 						className="absolute bottom-3 right-3"
 					/>
 					<img
-						src={Buildings}
+						src={buildings}
 						alt=""
 						className="absolute bottom-5 right-1/3"
 					/>
 					<img
-						src={Buildings}
+						src={buildings}
 						alt=""
 						className="absolute bottom-1/3 left-1/3"
 					/>
 					<img
-						src={Buildings}
+						src={buildings}
 						alt=""
 						className="absolute bottom-2 left-4"
 					/>
 					<img
-						src={Buildings}
+						src={buildings}
 						alt=""
 						className="absolute top-5 left-[30%] -z-10"
 					/>

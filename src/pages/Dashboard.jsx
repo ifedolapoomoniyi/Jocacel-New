@@ -1,12 +1,11 @@
 import { IoPeopleOutline } from "react-icons/io5";
-import Sidebar from "../components/Sidebar";
-import { MdHouse } from "react-icons/md";
 import { GoProjectRoadmap } from "react-icons/go";
-import AdminProject from "../components/AdminProject";
-import RealEstate1 from "../assets/RealEstate1.png";
-import AdminRealEstate from "../components/AdminRealEstate";
-import RealEstateImg from "../assets/RealEstateImg.png";
-import TopBar from "../components/TopBar";
+import { MdHouse } from "react-icons/md";
+
+
+import { AdminProject, AdminRealEstate, Sidebar, TopBar } from "../components";
+
+import { RealEstateImg, RealEstate1 } from "../assets";
 import { useState } from "react";
 import { BASE_URL } from "../utils";
 import { useEffect } from "react";

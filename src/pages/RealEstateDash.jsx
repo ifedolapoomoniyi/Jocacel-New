@@ -1,7 +1,6 @@
-import AdminRealEstate from "../components/AdminRealEstate";
-import Sidebar from "../components/Sidebar";
-import TopBar from "../components/TopBar";
-import RealEstateImg from "../assets/RealEstateImg.png";
+import { AdminRealEstate, Sidebar, TopBar } from "../components";
+import { RealEstateImg } from "../assets";
+
 import { Link } from "react-router-dom";
 
 export const RealEstateDash = () => {

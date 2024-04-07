@@ -1,13 +1,12 @@
-import { useState } from "react";
-import Sidebar from "../components/Sidebar";
-import TopBar from "../components/TopBar";
+import { AdminProject, Sidebar, TopBar } from "../components";
+
 import { useEffect } from "react";
 import { BASE_URL } from "../utils";
-import AdminProject from "../components/AdminProject";
 import { useFormik } from "formik";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const GalleryDash = () => {
 	const [teamData, setTeamData] = useState([]);

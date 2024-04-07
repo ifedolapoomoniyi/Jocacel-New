@@ -1,13 +1,10 @@
+import { RealEstate1, RealEstate2, RealEstate3 } from "../assets";
+import { Navbar, Footer, ImgSlider, BtnPrimary } from "../components";
+
 import { MdOutlineBed } from "react-icons/md";
-import Navbar from "../components/Navbar";
 import { FaBath } from "react-icons/fa";
 import { LuParkingSquare } from "react-icons/lu";
-import BtnPrimary from "../components/BtnPrimary";
-import Footer from "../components/Footer";
-import ImgSlider from "../components/ImgSlider";
-import RealEstate1 from "../assets/RealEstate1.png";
-import RealEstate2 from "../assets/RealEstate2.png";
-import RealEstate3 from "../assets/RealEstate3.png";
+
 
 const Property = () => {
 	return (

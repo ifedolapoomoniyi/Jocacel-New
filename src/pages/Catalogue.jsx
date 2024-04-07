@@ -1,8 +1,5 @@
-import BtnPrimary from "../components/BtnPrimary";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import RealEstate from "../components/RealEstate";
-import House1 from "../assets/House1.png";
+import { BtnPrimary, Footer, Navbar, RealEstate } from "../components";
+import { House1 } from "../assets";
 
 const Catalogue = () => {
 	return (

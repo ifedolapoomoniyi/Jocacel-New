@@ -1,8 +1,5 @@
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import ContactImg from "../assets/ContactImg.png";
-import Email from "../assets/icons/Email.svg";
-import Call from "../assets/icons/Call.svg";
+import { Navbar, Footer } from "../components";
+import { ContactImg, Email, Call } from "../assets";
 
 const Contact = () => {
 	return (

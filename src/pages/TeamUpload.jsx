@@ -1,6 +1,6 @@
+import { Sidebar, TopBar } from "../components";
+
 import { useState } from "react";
-import Sidebar from "../components/Sidebar";
-import Topbar from "../components/Topbar";
 import { BASE_URL } from "../utils/index";
 import { useEffect } from "react";
 import { FaTrash } from "react-icons/fa";
@@ -86,7 +86,7 @@ const TeamUpload = () => {
 			<Sidebar />
 
 			<div className="w-full p-5">
-				<Topbar />
+				<TopBar />
 				<ToastContainer />
 
 				<div className="flex flex-wrap justify-center gap-10 py-5 md:justify-normal md:items-top">

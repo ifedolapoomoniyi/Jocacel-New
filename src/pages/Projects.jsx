@@ -1,14 +1,9 @@
-import BtnPrimary from "../components/BtnPrimary";
-import Gallery from "../components/Gallery";
-import Navbar from "../components/Navbar";
-import PropertyImg1 from "../assets/PropertyImg1.png";
-import RealEstateImg from "../assets/RealEstateImg.png";
-import Footer from "../components/Footer";
-import { useState } from "react";
+import { BtnPrimary, Footer, Gallery, Navbar } from "../components";
+import { PropertyImg1, RealEstateImg, HouseImg } from "../assets";
+
+import { useState, useEffect } from "react";
 import { BASE_URL } from "../utils";
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import HouseImg from "../assets/HouseImg.png";
 import { GoArrowRight } from "react-icons/go";
 
 const Projects = () => {
