@@ -1,9 +1,5 @@
-import Facebook from "../assets/icons/Facebook.svg";
-import instagram from "../assets/icons/instagram.svg";
-import twitter from "../assets/icons/twitter.svg";
-import linkedin from "../assets/icons/linkedin.svg";
-import Logo from "../assets/Logo.png"
-import Go from "../assets/icons/Go.svg"
+import { Logo, Go, Facebook, instagram, twitter, linkedin} from '../assets'
+
 import { Link } from "react-router-dom";
 
 const Footer = () => {

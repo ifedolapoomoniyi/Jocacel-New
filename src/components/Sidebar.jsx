@@ -1,4 +1,5 @@
-import Logo from "../assets/logo.png";
+import { Logo } from "../assets";
+
 import { IoPeopleOutline } from "react-icons/io5";
 import { GoProjectRoadmap } from "react-icons/go";
 import { LuLogOut } from "react-icons/lu";

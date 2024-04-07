@@ -1,4 +1,4 @@
-import Go from "../assets/icons/Go.svg";
+import { Go } from "../assets";
 
 const BtnPrimary = ({ text, arrow, white }) => {
 	return (

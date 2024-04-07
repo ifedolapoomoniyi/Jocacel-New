@@ -1,7 +1,8 @@
+import { Go } from "assets";
+
 import { MdOutlineBed } from "react-icons/md";
 import { LuParkingSquare } from "react-icons/lu";
 import { FaBath } from "react-icons/fa";
-import Go from "../assets/icons/Go.svg";
 import { Link } from "react-router-dom";
 
 const RealEstate = ({

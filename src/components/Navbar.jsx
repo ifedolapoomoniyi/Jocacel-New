@@ -1,5 +1,6 @@
+import { Logo } from "../assets";
+
 import { NavLink } from "react-router-dom";
-import Logo from "../assets/logo.png";
 import { useState } from "react";
 import { useCallback } from "react";
 import { useEffect } from "react";

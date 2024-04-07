@@ -1,4 +1,4 @@
-import Avatar from "../assets/Avatar.png";
+import { Avatar } from "../assets";
 
 const TopBar = () => {
 	return (
