@@ -1,4 +1,4 @@
-import { Go } from "assets";
+import { Go } from "../assets";
 
 import { MdOutlineBed } from "react-icons/md";
 import { LuParkingSquare } from "react-icons/lu";
