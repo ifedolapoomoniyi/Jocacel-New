@@ -9,7 +9,12 @@ import "react-toastify/dist/ReactToastify.css";
 import { useFormik } from "formik";
 import { motion } from "framer-motion";
 
+import { convertToBase64 } from "../utils";
+
 const TeamUpload = () => {
+	// Track image upload state
+	const [file, setFile] = useState(null);
+
 	const handleSubmit = async (values) => {
 		try {
 			const res = await fetch(`${BASE_URL}/team`, {
@@ -25,7 +30,7 @@ const TeamUpload = () => {
 				toast.info("Upload Successful");
 			}
 		} catch (error) {
-			console.error("error ooo", error.message);
+			console.error("Error: ", error.message);
 		}
 	};
 
@@ -33,11 +38,17 @@ const TeamUpload = () => {
 		initialValues: {
 			name: "",
 			role: "",
-			description: "",
-			image: "",
+			description: ""
 		},
-		onSubmit: (values) => {
-			handleSubmit(values);
+
+		onSubmit: async (values) => {
+			try {
+				values = Object.assign(values, { image: file || "" });
+				handleSubmit(values);
+				console.log("values", values);
+			} catch (error) {
+				console.error("Error: ", error.message);
+			}
 		},
 	});
 
@@ -74,8 +85,13 @@ const TeamUpload = () => {
 		}
 	};
 
-	// handle submit
-
+	// File upload handler
+	const onUpload = async e => {
+		const base64 = await convertToBase64(e.target.files[0]);
+		setFile(base64);
+		console.log("base64", base64);
+	  };
+	
 	return (
 		<motion.div
 			initial={{ opacity: 0, x: 100 }}
@@ -157,6 +173,9 @@ const TeamUpload = () => {
 									<input
 										type="file"
 										id="image"
+										name="image"
+										accept="image/*"
+										onChange={onUpload}
 										className="p-2 border border-gray-300 rounded-md"
 									/>
 								</div>
