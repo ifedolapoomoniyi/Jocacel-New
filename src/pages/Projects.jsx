@@ -1,10 +1,11 @@
 import { BtnPrimary, Footer, Gallery, Navbar } from "../components";
-import { PropertyImg1, RealEstateImg, HouseImg } from "../assets";
+import { PropertyImg1, HouseImg } from "../assets";
 
 import { useState, useEffect } from "react";
 import { BASE_URL } from "../utils";
 import { Link } from "react-router-dom";
 import { GoArrowRight } from "react-icons/go";
+import { motion } from "framer-motion";
 
 const Projects = () => {
 	const [teamData, setTeamData] = useState([]);
@@ -19,7 +20,12 @@ const Projects = () => {
 	}, []);
 
 	return (
-		<div className="text-xl">
+		<motion.div
+			className="text-xl"
+			initial={{ opacity: 0, x: 100 }}
+			animate={{ opacity: 1, x: 0 }}
+			exit={{ opacity: 0, x: -100 }}
+		>
 			<Navbar />
 
 			{/* Hero */}
@@ -51,7 +57,7 @@ const Projects = () => {
 					<Gallery
 						key={project._id}
 						details={project.details}
-						image={RealEstateImg}
+						image={project.image}
 					/>
 				))}
 
@@ -66,7 +72,9 @@ const Projects = () => {
 			{/* Contact us */}
 			<div className="p-5 w-[75%] lg:w-[65%] green-black-gradient m-auto rounded-xl text-white flex items-center flex-col relative">
 				<div className="max-w-[400px] m-auto flex flex-col items-center z-10">
-					<h3 className="py-3 text-xl font-bold md:text-2xl">Like Our Work?</h3>
+					<h3 className="py-3 text-xl font-bold md:text-2xl">
+						Like Our Work?
+					</h3>
 					<div>
 						Quality is never an accident, it is always the result of
 						intelligent effort. Here are some of our recent building
@@ -89,7 +97,7 @@ const Projects = () => {
 			</div>
 
 			<Footer />
-		</div>
+		</motion.div>
 	);
 };
 

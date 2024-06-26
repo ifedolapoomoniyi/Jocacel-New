@@ -1,9 +1,15 @@
 import { Navbar, Footer } from "../components";
 import { ContactImg, Email, Call } from "../assets";
+import { motion } from "framer-motion";
 
 const Contact = () => {
 	return (
-		<div className="md:text-xl">
+		<motion.div
+			className="md:text-xl"
+			initial={{ opacity: 0, x: 100 }}
+			animate={{ opacity: 1, x: 0 }}
+			exit={{ opacity: 0, x: -100 }}
+		>
 			<Navbar />
 
 			<div className="flex items-center justify-center p-4">
@@ -42,7 +48,7 @@ const Contact = () => {
 			</div>
 
 			<Footer />
-		</div>
+		</motion.div>
 	);
 };
 

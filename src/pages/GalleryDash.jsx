@@ -61,12 +61,12 @@ const GalleryDash = () => {
 	});
 
 	// File upload handler
-	const onUpload = async e => {
+	const onUpload = async (e) => {
 		const base64 = await convertToBase64(e.target.files[0]);
 		setFile(base64);
 		console.log("base64", base64);
-	  };
-	  
+	};
+
 	return (
 		<motion.div
 			initial={{ opacity: 0, x: 100 }}
@@ -80,21 +80,34 @@ const GalleryDash = () => {
 				<TopBar />
 
 				<div className="md:border-none pb-5 border-b border-b-stone-600">
-					<form 
-					onSubmit={formik.handleSubmit} 
-					className="flex flex-col gap-3 w-[300px]">
-            <h3 className="font-semibold p-2">Project Title</h3>
-            <textarea name="details" id="details" value={formik.values.details} onChange={formik.handleChange} cols="30" rows="3" className="resize-none rounded-lg border-gray-200 border p-4"></textarea>
-            <input 
-			type="file" 
-			name="image" 
-			id="image" 
-			accept="image/*"
-			onChange={onUpload}/>
-            <button 
-			className="bg-primary p-2 rounded-lg text-white" 
-			type="submit">Upload Project</button>
-          </form>
+					<form
+						onSubmit={formik.handleSubmit}
+						className="flex flex-col gap-3 w-[300px]"
+					>
+						<h3 className="font-semibold p-2">Project Title</h3>
+						<textarea
+							name="details"
+							id="details"
+							value={formik.values.details}
+							onChange={formik.handleChange}
+							cols="30"
+							rows="3"
+							className="resize-none rounded-lg border-gray-200 border p-4"
+						></textarea>
+						<input
+							type="file"
+							name="image"
+							id="image"
+							accept="image/*"
+							onChange={onUpload}
+						/>
+						<button
+							className="bg-primary p-2 rounded-lg text-white"
+							type="submit"
+						>
+							Upload Project
+						</button>
+					</form>
 				</div>
 				<div>
 					<h2 className="font-semibold p-5">Past Projects</h2>

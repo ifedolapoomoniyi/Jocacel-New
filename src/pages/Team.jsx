@@ -76,7 +76,7 @@ const Team = () => {
 						title={team.role}
 						route={`/team/${team._id}`}
 						text={team.description}
-						image={TeamImg}
+						image={team.image ? team.image : TeamImg}
 					/>
 				))}
 			</div>

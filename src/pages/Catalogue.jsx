@@ -1,9 +1,15 @@
 import { BtnPrimary, Footer, Navbar, RealEstate } from "../components";
 import { House1 } from "../assets";
+import { motion } from "framer-motion";
 
 const Catalogue = () => {
 	return (
-		<div className="md:text-xl">
+		<motion.div
+			initial={{ opacity: 0, x: 100 }}
+			animate={{ opacity: 1, x: 0 }}
+			exit={{ opacity: 0, x: -100 }}
+			className="md:text-xl"
+		>
 			<Navbar />
 
 			{/* Hero */}
@@ -55,7 +61,7 @@ const Catalogue = () => {
 			</div>
 
 			<Footer />
-		</div>
+		</motion.div>
 	);
 };
 
