@@ -30,9 +30,9 @@ const Home = () => {
 					Top Designers and Developers of Buildings in Nigeria
 				</h1>
 				<p className="text-center">Get your dream house built by the best in the industry</p>
-				<button className="flex flex-row items-center gap-2 p-2 px-4 my-2 text-white transition-all rounded-md bg-primary hover:opacity-80">
+				<Link to="/contact" className="flex flex-row items-center gap-2 p-2 px-4 my-2 text-white transition-all rounded-md bg-primary hover:opacity-80">
 					Contact Us <img src={Go} alt="" className="inline w-8" />
-				</button>
+				</Link>
 			</div>
 
 			{/* About Section */}

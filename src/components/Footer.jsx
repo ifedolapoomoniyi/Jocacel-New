@@ -13,7 +13,7 @@ const Footer = () => {
 						Limited Liability Partnership will be happy to discuss
 						your project.
 						<br />A one-stop shop for real estate.
-						<button className="flex flex-row gap-2 items-center my-2 p-2 px-4 rounded-md bg-primary text-white hover:opacity-80 transition-all">Contact Us <img src={Go} alt="" className="inline w-8"/></button>
+						<Link to="/contact" className="flex flex-row gap-2 items-center my-2 p-2 px-4 rounded-md bg-primary text-white hover:opacity-80 transition-all w-fit">Contact Us <img src={Go} alt="" className="inline w-8"/></Link>
 					</div>
 				</div>
 
