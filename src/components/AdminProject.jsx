@@ -63,7 +63,7 @@ const AdminProject = ({ image, text, id }) => {
 
 					{toggle ? (
 					<div>
-						<div onClick={()=> {deleteProject(id)}} className="flex flex-row items-center hover:bg-red-400 text-red-500 gap-2 p-2 hover:text-white rounded-lg shadow-md absolute right-0 top-0 bg-white"><FaTrash/> Delete project</div>
+						<div onClick={()=> {deleteProject(id)}} className="flex flex-row items-center hover:bg-red-500 text-red-500 gap-2 p-2 hover:text-white rounded-lg shadow-md absolute right-0 top-0 bg-white cursor-pointer"><FaTrash/> Delete project</div>
 					</div>
 					) : (
 						""
