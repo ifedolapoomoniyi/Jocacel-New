@@ -14,6 +14,10 @@ import GalleryDash from "./pages/GalleryDash";
 import { RealEstateDash } from "./pages/RealEstateDash";
 import AddRealEstate from "./pages/AddRealEstate";
 import ScrollToTop from "./utils/ScrollToTop";
+import Director from "./pages/Director";
+import Chief from "./pages/Chief";
+import Lawyer from "./pages/Lawyer";
+import Technical from "./pages/Technical"
 
 function App() {
 	return (
@@ -34,6 +38,13 @@ function App() {
 					<Route path="/dashboard" element={<Dashboard />} />
 					<Route path="/dashboard/team" element={<TeamUpload />} />
 					<Route path="/team/:id" element={<Fakeye />} />
+
+					{/* Team routes */}
+					<Route path="/team/director" element={<Director />} />
+					<Route path="/team/chief" element={<Chief />} />
+					<Route path="/team/lawyer" element={<Lawyer />} />
+					<Route path="/team/technical" element={<Technical/>} />
+
 					<Route path="/gallery" element={<Projects />} />
 					<Route
 						path="/dashboard/gallery"
@@ -43,7 +54,10 @@ function App() {
 						path="/dashboard/real-estate"
 						element={<RealEstateDash />}
 					/>
-					<Route path="/dashboard/add-real-estate" element={<AddRealEstate />} />
+					<Route
+						path="/dashboard/add-real-estate"
+						element={<AddRealEstate />}
+					/>
 				</Routes>
 			</BrowserRouter>
 		</>
