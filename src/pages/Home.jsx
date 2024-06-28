@@ -29,8 +29,15 @@ const Home = () => {
 				<h1 className="text-3xl text-center">
 					Top Designers and Developers of Buildings in Nigeria
 				</h1>
-				<p className="text-center">Get your dream house built by the best in the industry</p>
-				<Link to="/contact" className="flex flex-row items-center gap-2 p-2 px-4 my-2 text-white transition-all rounded-md bg-primary hover:opacity-80">
+				<p className="text-center">
+					Whether you&apos;re looking to build a new home, remodel
+					your existing space, or simply buy a new home, we have the
+					expertise to bring your vision to life
+				</p>
+				<Link
+					to="/contact"
+					className="flex flex-row items-center gap-2 p-2 px-4 my-2 text-white transition-all rounded-md bg-primary hover:opacity-80"
+				>
 					Contact Us <img src={Go} alt="" className="inline w-8" />
 				</Link>
 			</div>
@@ -51,21 +58,24 @@ const Home = () => {
 					</div>
 					<div className="flex items-center justify-center flex-1">
 						We render comprehensive services in the spectrum of
-						construction and civil engineering, real estate and
-						facility management. With our prized human resources
-						comprised of experienced personnel, adept at deploying
-						latest technologies to serve better our stream of
-						clients, timely and accurate project goal achievement is
+						construction and civil engineering, and facility
+						management. With our prized human resources comprised of
+						experienced personnel, adept at deploying latest
+						technologies to serve better our stream of clients,
+						timely and accurate project goal achievement is
 						guaranteed.
 						<br />
 						We render advisory and design services as parts of our
-						consultancy in civil and engineering services to our
-						sub-contractors and clients.
+						consultancy in all construction engineering services to
+						our clients.
 					</div>
 				</div>
 
 				{/* Services */}
-				<div className="flex flex-col justify-between gap-5 p-5 py-10 md:flex-row md:p-10" id="services">
+				<div
+					className="flex flex-col justify-between gap-5 p-5 py-10 md:flex-row md:p-10"
+					id="services"
+				>
 					{/* styling div */}
 					<div className="self-end w-6/12 h-1 md:w-1 md:h-auto bg-primary md:self-auto"></div>
 
@@ -137,11 +147,7 @@ const Home = () => {
 							</li>
 							<li>
 								<span className="inline-block w-4 h-4 mx-1 rounded-full bg-primary"></span>{" "}
-								Concrete Repairs and Demolitons;
-							</li>
-							<li>
-								<span className="inline-block w-4 h-4 mx-1 rounded-full bg-primary"></span>{" "}
-								Underpinning of Foundation.
+								Concrete Repairs and Demolitons.
 							</li>
 							<li>
 								<span className="inline-block w-4 h-4 mx-1 rounded-full bg-primary"></span>
@@ -166,9 +172,9 @@ const Home = () => {
 					<p>
 						KADAF Properties Limited Liability Partnership is an
 						organization with a complete team of built-environment
-						professionals, Construction Project Managers, and legal
-						practitioners who are well versed in the real estate
-						matters.
+						professionals. Our partners are very young organisations
+						but with cumulative experiences that span above 15 years
+						in complex construction projects of various kinds.
 					</p>
 					<p>
 						KADAF Properties LLP specializes in turnkey projects
@@ -179,7 +185,7 @@ const Home = () => {
 						infrastructures to various final finishes, installations
 						of household appliances and furniture. Our mechanical
 						and electrical designs and installation services are
-						handled by well-seasoned engineers.{" "}
+						handled by well-seasoned engineers.
 					</p>
 					<p>
 						KADAF established a technical working relationship with
