@@ -36,5 +36,10 @@ import Go from './icons/Go.svg'
 import instagram from './icons/instagram.svg'
 import linkedin from './icons/linkedin.svg'
 import twitter from './icons/twitter.svg'
+import FakeyeImg from './FakeyeImg.jpg'
+import ChiefImg from "./ChiefImg.jpg"
+import ChiefImgAlt from "./ChiefImgAlt.jpg"
+import LawyerImg from "./LawyerImg.jpg"
+import TechnicalImg from "./TechnicalImg.jpg"
 
-export { About1, About2, About3, About4, Avatar, ContactImg, dashimg1, dashimg2, dashimg3, EstateImg, GalleryImg, Hero, House1, HouseImg, Img1, Img2, Img3, Img4, Img5, LoginImg, Logo, Mission, PropertyImg1, RealEstate1, RealEstate2, RealEstate3, RealEstateImg, TeamHero, TeamImg, buildings, Call, Email, Facebook, Go, instagram, linkedin, twitter}
+export { About1, About2, About3, About4, Avatar, ContactImg, dashimg1, dashimg2, dashimg3, EstateImg, GalleryImg, Hero, House1, HouseImg, Img1, Img2, Img3, Img4, Img5, LoginImg, Logo, Mission, PropertyImg1, RealEstate1, RealEstate2, RealEstate3, RealEstateImg, TeamHero, TeamImg, buildings, Call, Email, Facebook, Go, instagram, linkedin, twitter, FakeyeImg, ChiefImg, ChiefImgAlt, LawyerImg, TechnicalImg}
