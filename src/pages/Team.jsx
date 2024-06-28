@@ -48,14 +48,7 @@ const Team = () => {
 					corresponding sections.
 				</p>
 				<p>
-					KADAF Board of Directors currently comprises of a Chief
-					Executive Officer, one Executive Director and Partners with
-					other sectional heads like Civil/Structural Engineers,
-					Mechanical Engineers, Electrical Engineers, Real Estate
-					Surveyors, Draughts men, Town Planner, Land and
-					Geo-informatics surveyors, Quantity Surveyors, HSE
-					personnel, Steel Fabricators and other skilled and unskilled
-					workers.
+				KADAF Board of Directors currently comprises of a Chief Executive Officer, one Managing Director, company secretary/lawyer and Partners.
 				</p>
 
 				<p>
