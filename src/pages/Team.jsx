@@ -1,5 +1,5 @@
 import { Navbar, Footer, TeamCard, BtnPrimary } from "../components";
-import { TeamImg } from "../assets";
+import { ChiefImgAlt, FakeyeImg, LawyerImg, TeamImg, TechnicalImg } from "../assets";
 
 import { motion } from "framer-motion";
 
@@ -38,7 +38,7 @@ const Team = () => {
 			</div>
 
 			{/* Meet the team */}
-		<div className="p-5 md:p-10 flex flex-col gap-4">
+			<div className="p-5 md:p-10 flex flex-col gap-4">
 				<h1 className="text-3xl font-bold text-center pb-4">
 					Meet The Team
 				</h1>
@@ -48,7 +48,9 @@ const Team = () => {
 					corresponding sections.
 				</p>
 				<p>
-				KADAF Board of Directors currently comprises of a Chief Executive Officer, one Managing Director, company secretary/lawyer and Partners.
+					KADAF Board of Directors currently comprises of a Chief
+					Executive Officer, one Managing Director, company
+					secretary/lawyer and Partners.
 				</p>
 
 				<p>
@@ -58,6 +60,38 @@ const Team = () => {
 					various types of projects to ensure our quality and valuable
 					delivery.
 				</p>
+			</div>
+
+			{/* Hardcoded teams members */}
+			<div className="flex flex-row flex-wrap gap-5 items-center justify-center p-10">
+				<TeamCard
+					name="Dada Kayode"
+					title="CEO"
+					route="/team/chief"
+					text="Dada, Kayode Micheal possesses three degrees across Nigeria and United Kingdom, all in the field of Pyschology"
+					image={ChiefImgAlt}
+				/>
+				<TeamCard
+					name="Abolarin Fakeye"
+					title="Executive Director"
+					route="/team/director"
+					text="FAKEYE, Abolarin is a professional builder, proficient construction project manager with wealth of cost-effective construction engineering skills at both design and construction stages.."
+					image={FakeyeImg}
+				/>
+				<TeamCard
+					name="Akinwale Omolara"
+					title="Company Secretary/Lawyer"
+					route="/team/lawyer"
+					text="Akinwale, Omolara is a professional Legal Practitioner, Corporate Secretary, Administrator and Certified Mediator. With utmost efficiency"
+					image={LawyerImg}
+				/>
+				<TeamCard
+					name="Odusina Adewale"
+					title="CTO"
+					route="/team/technical"
+					text="Odusina, Adewale, a Nigerian, is a Certified Electrical Engineer with 24 years in the Building Services Industry. He has worked at various Building services companies"
+					image={TechnicalImg}
+				/>	
 			</div>
 
 			{/* Team cards */}
