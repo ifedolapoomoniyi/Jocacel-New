@@ -1,4 +1,4 @@
-import { Logo, Go, Facebook, instagram, twitter, linkedin} from '../assets'
+import { Logo, Go, Facebook, instagram, twitter, linkedin } from "../assets";
 
 import { Link } from "react-router-dom";
 
@@ -13,17 +13,31 @@ const Footer = () => {
 						Limited Liability Partnership will be happy to discuss
 						your project.
 						<br />A one-stop shop for real estate.
-						<Link to="/contact" className="flex flex-row gap-2 items-center my-2 p-2 px-4 rounded-md bg-primary text-white hover:opacity-80 transition-all w-fit">Contact Us <img src={Go} alt="" className="inline w-8"/></Link>
+						<Link
+							to="/contact"
+							className="flex flex-row gap-2 items-center my-2 p-2 px-4 rounded-md bg-primary text-white hover:opacity-80 transition-all w-fit"
+						>
+							Contact Us{" "}
+							<img src={Go} alt="" className="inline w-8" />
+						</Link>
 					</div>
 				</div>
 
 				{/* Menu */}
 				<div className="flex flex-col gap-3 md:gap-5 my-4">
 					<span className="font-bold">Menu</span>
-          <Link to="/" className="hover:text-primary">Home</Link>
-					<Link to="/team" className="hover:text-primary">About Us</Link>
-					<Link to="/" className="hover:text-primary">Our Projects</Link>
-					<Link to="/real-estate" className="hover:text-primary">Real Estate</Link>
+					<Link to="/" className="hover:text-primary">
+						Home
+					</Link>
+					<Link to="/team" className="hover:text-primary">
+						About Us
+					</Link>
+					<Link to="/" className="hover:text-primary">
+						Our Projects
+					</Link>
+					<Link to="/real-estate" className="hover:text-primary">
+						Real Estate
+					</Link>
 					<Link className="hover:text-primary">Services</Link>
 				</div>
 
@@ -35,10 +49,25 @@ const Footer = () => {
 						Ifako-Gbagada, Lagos, Nigeria.
 					</address>
 					<div>
-						<span>Phone: </span> <span>07055532311</span>,{" "}
-						<span>08064546214</span>
+						<span>Phone: </span>{" "}
+						<a href="tel:08064546214" className="underline">
+							0806 454 6214
+						</a>
+						,{" "}
+						<a href="tel:0705553211" className="underline">
+							0705 553 2311
+						</a>
 					</div>
-					<div>Email</div>
+					<div>
+						<span>Email: </span>{" "}
+						<a href="mailto:kadafpropertiesllp@gmail.com" className="underline italic">
+							kadafpropertiesllp@gmail.com
+						</a>
+						,{" "}
+						<a href="mailto:info@kadafpropertiesllp.com" className="underline italic">
+							info@kadafpropertiesllp.com
+						</a>
+					</div>
 				</div>
 			</div>
 
@@ -53,7 +82,10 @@ const Footer = () => {
 					{" "}
 					<img src={instagram} alt="" />
 				</a>
-				<a href="" className="hover:opacity-80">
+				<a
+					href="https://x.com/michaeljamesLLP"
+					className="hover:opacity-80"
+				>
 					<img src={linkedin} alt="" />
 				</a>
 			</div>
