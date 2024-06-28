@@ -120,10 +120,21 @@ const Navbar = () => {
 								? "text-primary"
 								: "hover:text-primary";
 						}}
+						to="/partners"
+					>
+						Partners
+					</NavLink>
+
+					{/* <NavLink
+						className={({ isActive }) => {
+							return isActive
+								? "text-primary"
+								: "hover:text-primary";
+						}}
 						to="/real-estate"
 					>
 						Real Estate
-					</NavLink>
+					</NavLink> */}
 					<NavLink
 						className={({ isActive }) => {
 							return isActive
