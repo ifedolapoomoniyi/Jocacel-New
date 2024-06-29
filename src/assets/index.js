@@ -41,5 +41,13 @@ import ChiefImg from "./ChiefImg.jpg"
 import ChiefImgAlt from "./ChiefImgAlt.jpg"
 import LawyerImg from "./LawyerImg.jpg"
 import TechnicalImg from "./TechnicalImg.jpg"
+import ArchitectsImg from "./partners/ArchitectsImg.png"
+import BuildersImg from "./partners/BuildersImg.png"
+import DakooImg from "./partners/DakooImg.png"
+import HarbleyzImg from "./partners/HarbleyzImg.png"
+import HiworksImg from "./partners/HiworksImg.png"
+import JocacelImg from "./partners/JocacelImg.png"
+import PartnerLanding from "./partners/PartnerLanding.png"
+import StarkwoodImg from "./partners/StarkwoodImg.png"
 
-export { About1, About2, About3, About4, Avatar, ContactImg, dashimg1, dashimg2, dashimg3, EstateImg, GalleryImg, Hero, House1, HouseImg, Img1, Img2, Img3, Img4, Img5, LoginImg, Logo, Mission, PropertyImg1, RealEstate1, RealEstate2, RealEstate3, RealEstateImg, TeamHero, TeamImg, buildings, Call, Email, Facebook, Go, instagram, linkedin, twitter, FakeyeImg, ChiefImg, ChiefImgAlt, LawyerImg, TechnicalImg}
+export { About1, About2, About3, About4, Avatar, ContactImg, dashimg1, dashimg2, dashimg3, EstateImg, GalleryImg, Hero, House1, HouseImg, Img1, Img2, Img3, Img4, Img5, LoginImg, Logo, Mission, PropertyImg1, RealEstate1, RealEstate2, RealEstate3, RealEstateImg, TeamHero, TeamImg, buildings, Call, Email, Facebook, Go, instagram, linkedin, twitter, FakeyeImg, ChiefImg, ChiefImgAlt, LawyerImg, TechnicalImg, ArchitectsImg, BuildersImg, DakooImg, HarbleyzImg, HiworksImg, JocacelImg, PartnerLanding, StarkwoodImg}
