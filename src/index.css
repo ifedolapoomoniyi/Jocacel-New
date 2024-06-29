@@ -65,8 +65,11 @@
   background-size: cover;
   background-position: center;
 }
-
-
+.partners-hero {
+  background-image: url(assets/partners/PartnerLanding.png);
+  background-size: cover;
+  background-position: center;
+}
 /* Gradients */
 .green-black-gradient {
   background: linear-gradient(98.1deg, #2B792E 58.07%, #000000 112.47%);
