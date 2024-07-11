@@ -2,9 +2,9 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Img1 from "../assets/Img1.png";
 import Img2 from "../assets/Img2.png";
-import Img3 from "../assets/Img3.png";
+import Img3 from "../assets/Img3.jpg";
 import Img4 from "../assets/Img4.png";
-import Img5 from "../assets/Img5.png";
+import Img5 from "../assets/Img5.jpg";
 import Mission from "../assets/Mission.png";
 import Go from "../assets/icons/Go.svg";
 import About1 from "../assets/About1.png";
@@ -73,13 +73,13 @@ const Home = () => {
 
 				{/* Services */}
 				<div
-					className="flex flex-col justify-between gap-5 p-5 py-10 md:flex-row md:p-10"
+					className="flex flex-col justify-between gap-5 p-5 py-10 md:flex-row md:p-10 my-5"
 					id="services"
 				>
 					{/* styling div */}
 					<div className="self-end w-6/12 h-1 md:w-1 md:h-auto bg-primary md:self-auto"></div>
 
-					<div className="flex-1 max-w-[700px] flex flex-col items-center justify-center">
+					<div className="flex-1 max-w-[700px] flex flex-col items-center justify-center my-5">
 						<h2 className="text-3xl font-bold py-3">
 							General Construction Services, Water and Wastewater
 							Systems, and General Electrical Installations
@@ -95,7 +95,11 @@ const Home = () => {
 						</div>
 					</div>
 					<div className="flex-1">
-						<img src={Img3} alt="" />
+						<img
+							src={Img3}
+							alt=""
+							className="max-h-[500px] aspect-square"
+						/>
 					</div>
 				</div>
 
@@ -157,7 +161,7 @@ const Home = () => {
 					</div>
 
 					<div className="py-3">
-						<img src={Img5} alt="" />
+						<img src={Img5} alt="" className="max-h-[500px] " />
 					</div>
 				</div>
 			</div>
@@ -282,7 +286,7 @@ const Home = () => {
 					</Link>
 				</div>
 
-				<div className="bg-secondary rounded-2xl shadow-lg p-4 flex flex-col gap-2 max-w-[500px]">
+				{/* <div className="bg-secondary rounded-2xl shadow-lg p-4 flex flex-col gap-2 max-w-[500px]">
 					<div>Real Estate</div>
 					<h2 className="py-2 text-3xl font-semibold">
 						Our Properties
@@ -301,7 +305,7 @@ const Home = () => {
 							<img src={Go} alt="" className="inline" />
 						</span>
 					</Link>
-				</div>
+				</div> */}
 			</div>
 
 			{/* Footer */}
