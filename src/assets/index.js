@@ -14,9 +14,9 @@ import House1 from './House1.png'
 import HouseImg from './HouseImg.png'
 import Img1 from './Img1.png'
 import Img2 from './Img2.png'
-import Img3 from './Img3.png'
+import Img3 from './Img3.jpg'
 import Img4 from './Img4.png'
-import Img5 from './Img5.png'
+import Img5 from './Img5.jpg'
 import LoginImg from './LoginImg.png'
 import Logo from './Logo.png'
 import Mission from "./Mission.png"
@@ -61,7 +61,7 @@ import Adeyemo_after_1 from "./adeyemo_after/Adeyemo_after_1.jpeg"
 import Adeyemo_after_corridor from "./adeyemo_after/Adeyemo_after_corridor.jpeg"
 import Adeyemo_after_living from "./adeyemo_after/Adeyemo_after_living.jpeg"
 import Adeyemo_after_stairs from "./adeyemo_after/Adeyemo_after_stairs.jpeg"
-import Adeyemo_toilet_after from "./adeyemo_after/Adeyemo_toilet_after.jpeg"
+import Adeyemo_after_night from "./adeyemo_after/Adeyemo_after_night.jpeg"
 
 import Aladelola_after_bq from "./aladelola_after/Aladelola_after_bq.jpeg"
 import Aladelola_after_building from "./aladelola_after/Aladelola_after_building.jpeg"
@@ -74,4 +74,4 @@ import Aladelola_before_corridor from "./aladelola_before/Aladelola_before_corri
 import Aladelola_before_toilet from "./aladelola_before/aladelola_before_toilet.jpg"
 
 
-export { About1, About2, About3, About4, Avatar, ContactImg, dashimg1, dashimg2, dashimg3, EstateImg, GalleryImg, Hero, House1, HouseImg, Img1, Img2, Img3, Img4, Img5, LoginImg, Logo, Mission, PropertyImg1, RealEstate1, RealEstate2, RealEstate3, RealEstateImg, TeamHero, TeamImg, buildings, Call, Email, Facebook, Go, instagram, linkedin, twitter, FakeyeImg, ChiefImg, ChiefImgAlt, LawyerImg, TechnicalImg, ArchitectsImg, BuildersImg, DakooImg, HarbleyzImg, HiworksImg, JocacelImg, PartnerLanding, StarkwoodImg, Adeyemo_after_1, Adeyemo_after_corridor, Adeyemo_after_living, Adeyemo_after_stairs, Adeyemo_before, Adeyemo_before1, Adeyemo_before2, Adeyemo_before3, Adeyemo_before4, Adeyemo_toilet_after, Aladelola_after_bq, Aladelola_after_building, Aladelola_after_stairs, Aladelola_after_toilet, Aladelola_before_bq, Aladelola_before_building, Aladelola_before_corridor, Aladelola_before_toilet}
+export { About1, About2, About3, About4, Avatar, ContactImg, dashimg1, dashimg2, dashimg3, EstateImg, GalleryImg, Hero, House1, HouseImg, Img1, Img2, Img3, Img4, Img5, LoginImg, Logo, Mission, PropertyImg1, RealEstate1, RealEstate2, RealEstate3, RealEstateImg, TeamHero, TeamImg, buildings, Call, Email, Facebook, Go, instagram, linkedin, twitter, FakeyeImg, ChiefImg, ChiefImgAlt, LawyerImg, TechnicalImg, ArchitectsImg, BuildersImg, DakooImg, HarbleyzImg, HiworksImg, JocacelImg, PartnerLanding, StarkwoodImg, Adeyemo_after_1, Adeyemo_after_corridor, Adeyemo_after_living, Adeyemo_after_stairs, Adeyemo_before, Adeyemo_before1, Adeyemo_before2, Adeyemo_before3, Adeyemo_before4, Adeyemo_after_night, Aladelola_after_bq, Aladelola_after_building, Aladelola_after_stairs, Aladelola_after_toilet, Aladelola_before_bq, Aladelola_before_building, Aladelola_before_corridor, Aladelola_before_toilet}
