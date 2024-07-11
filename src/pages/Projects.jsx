@@ -8,7 +8,7 @@ import {
 	Adeyemo_before1,
 	Adeyemo_before2,
 	Adeyemo_before3,
-	Adeyemo_toilet_after,
+	Adeyemo_after_night,
 	Aladelola_after_bq,
 	Aladelola_after_building,
 	Aladelola_after_stairs,
@@ -148,7 +148,7 @@ const Projects = () => {
 								<img src={Adeyemo_after_living} alt="" />
 							</div>
 							<div className="h-[400px] flex items-center justify-center">
-								<img src={Adeyemo_toilet_after} alt="" />
+								<img src={Adeyemo_after_night} alt="" />
 							</div>
 							<div className="h-[400px] flex items-center justify-center">
 								<img src={Adeyemo_after_stairs} alt="" />

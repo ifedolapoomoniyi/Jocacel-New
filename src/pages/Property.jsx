@@ -22,7 +22,7 @@ const Property = () => {
 					</h3>
 					<h3>
 						<span className="font-bold text-2xl text-primary">
-							#95,000,000
+							#180,000,000
 						</span>
 						<p>For each duplex with their respective BQ</p>
 					</h3>
