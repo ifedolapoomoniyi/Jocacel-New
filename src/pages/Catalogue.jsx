@@ -42,22 +42,14 @@ const Catalogue = () => {
 				<RealEstate
 					location="12 Shodamola, stree, Ajoke Estate, Fagba, Lagos"
 					name="Exquisitely Finished and Spacious 5 Bedrrom Semidetatched Duplex.."
-					price="95,000,000"
+					price="180,000,000"
 					rooms="4"
 					bathrooms="4"
 					parking="6"
 					details="The project comprises of two duplexes, each duplex comprising of 5 en-suite bedrooms and 1 study. Ground floor comprises of a big kitchen & store, sitting room, dining, 1 bedroom and a big study. Upper floor has 4 bedrooms, a moderate family sitting room, a lobby each in the front and ba....."
 					image={House1}
 				/>
-				<RealEstate
-					location="12 Shodamola, stree, Ajoke Estate, Fagba, Lagos"
-					name="Exquisitely Finished and Spacious 5 Bedrrom Semidetafched Duplex.."
-					price="95,000,000"
-					rooms="4"
-					bathrooms="4"
-					parking="6"
-					details="The project comprises of two duplexes, each duplex comprising of 5 en-suite bedrooms and 1 study. Ground floor comprises of a big kitchen & store, sitting room, dining, 1 bedroom and a big study. Upper floor has 4 bedrooms, a moderate family sitting room, a lobby each in the front and ba....."
-				/>
+
 			</div>
 
 			<Footer />
