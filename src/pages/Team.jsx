@@ -1,5 +1,5 @@
 import { Navbar, Footer, TeamCard, BtnPrimary } from "../components";
-import { ChiefImgAlt, FakeyeImg, LawyerImg, TeamImg, TechnicalImg } from "../assets";
+import { ChiefImgAlt, FakeyeImg, LawyerImg, OyekanmiImgAlt, TeamImg, TechnicalImg } from "../assets";
 
 import { motion } from "framer-motion";
 
@@ -73,7 +73,7 @@ const Team = () => {
 				/>
 				<TeamCard
 					name="Abolarin Fakeye"
-					title="Executive Director"
+					title="Managing Director"
 					route="/team/director"
 					text="FAKEYE, Abolarin is a professional builder, proficient construction project manager with wealth of cost-effective construction engineering skills at both design and construction stages.."
 					image={FakeyeImg}
@@ -91,6 +91,13 @@ const Team = () => {
 					route="/team/technical"
 					text="Odusina, Adewale, a Nigerian, is a Certified Electrical Engineer with 24 years in the Building Services Industry. He has worked at various Building services companies"
 					image={TechnicalImg}
+				/>	
+				<TeamCard
+					name="Oyekanmi O Olugbenga"
+					title="Head, Quantity Survey"
+					route="/team/oyekanmi"
+					text="Bldr. Oyekanmi O. O, a graduate of Building from Yaba College of Technology (1982) holds a Master Degree in Project Management (Building) from the University of Lagos (2007)."
+					image={OyekanmiImgAlt}
 				/>	
 			</div>
 

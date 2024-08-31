@@ -19,6 +19,7 @@ import Chief from "./pages/Chief";
 import Lawyer from "./pages/Lawyer";
 import Technical from "./pages/Technical"
 import Partners from "./pages/Partners";
+import Oyekanmi from "./pages/Oyekanmi";
 
 function App() {
 	return (
@@ -46,6 +47,7 @@ function App() {
 					<Route path="/team/chief" element={<Chief />} />
 					<Route path="/team/lawyer" element={<Lawyer />} />
 					<Route path="/team/technical" element={<Technical/>} />
+					<Route path="/team/oyekanmi" element={<Oyekanmi />} />
 
 					<Route path="/gallery" element={<Projects />} />
 					<Route
