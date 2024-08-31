@@ -45,8 +45,7 @@ const Footer = () => {
 				<div className="max-w-[500px] flex flex-col gap-3 my-4">
 					<div className="font-bold pb-2">Contact</div>
 					<address>
-						<span>Address: </span> 7 Olofin Close, Off Ajoke Salako,
-						Ifako-Gbagada, Lagos, Nigeria.
+						<span>Address: </span> 12, Shodamola Street, Ajoke Estate, Fagba, Agege, Lagos.
 					</address>
 					<div>
 						<span>Phone: </span>{" "}
