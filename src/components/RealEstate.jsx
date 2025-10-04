@@ -1,7 +1,7 @@
 import { Go } from "../assets";
 
 import { MdOutlineBed } from "react-icons/md";
-import { LuParkingSquare } from "react-icons/lu";
+import { LuSquareParking } from "react-icons/lu";
 import { FaBath } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -31,7 +31,7 @@ const RealEstate = ({
 						<FaBath /> {bathrooms} Bathrooms
 					</div>
 					<div className="flex flex-row items-center gap-2 px-2 text-base">
-						<LuParkingSquare /> {parking} Parking spaces
+						<LuSquareParking /> {parking} Parking spaces
 					</div>
 				</div>
 			</div>
@@ -50,7 +50,7 @@ const RealEstate = ({
 					<FaBath /> {bathrooms} Bathrooms
 				</div>
 				<div className="flex flex-row items-center gap-2 px-2 text-sm">
-					<LuParkingSquare /> {parking} Parking spaces
+					<LuSquareParking /> {parking} Parking spaces
 				</div>
 			</div>
 

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaArrowAltCircleRight, FaBath, FaTrash } from "react-icons/fa";
-import { LuParkingSquare } from "react-icons/lu";
+import { LuSquareParking } from "react-icons/lu";
 import { MdOutlineBed } from "react-icons/md";
 import { TbDotsVertical } from "react-icons/tb";
 import { ToastContainer, toast } from "react-toastify";
@@ -80,7 +80,7 @@ const AdminRealEstate = ({
 							<FaBath /> {bathrooms} Bathrooms
 						</div>
 						<div className="flex flex-row items-center gap-2 px-2 text-base">
-							<LuParkingSquare /> {parking} Parking spaces
+							<LuSquareParking /> {parking} Parking spaces
 						</div>
 					</div>
 

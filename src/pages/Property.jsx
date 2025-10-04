@@ -3,7 +3,7 @@ import { Navbar, Footer, ImgSlider, BtnPrimary } from "../components";
 
 import { MdOutlineBed } from "react-icons/md";
 import { FaBath } from "react-icons/fa";
-import { LuParkingSquare } from "react-icons/lu";
+import { LuSquareParking } from "react-icons/lu";
 
 
 const Property = () => {
@@ -52,7 +52,7 @@ const Property = () => {
 					<FaBath className="text-primary" /> <div>4 Bathrooms</div>
 				</span>
 				<span className="flex flex-col items-center">
-					<LuParkingSquare className="text-primary" />
+					<LuSquareParking className="text-primary" />
 					<div>6 Parking spaces</div>
 				</span>
 			</div>
