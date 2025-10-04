@@ -99,11 +99,6 @@ const Navbar = () => {
 						Team
 					</NavLink>
 					<NavLink
-						className={({ isActive }) => {
-							return isActive
-								? "text-primary"
-								: "hover:text-primary";
-						}}
 						to="/#services"
 					>
 						Services

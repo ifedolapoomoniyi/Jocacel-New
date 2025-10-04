@@ -25,7 +25,7 @@ const Home = () => {
 			<Navbar />
 
 			{/* Hero Section */}
-			<div className="flex flex-col items-center justify-center w-full h-screen p-4 text-white landing-hero">
+			<div className="flex flex-col items-center justify-center w-full h-screen p-4 text-white landing-hero bg-[a9a9a9]">
 				<h1 className="text-3xl text-center">
 					Top Designers and Developers of Buildings in Nigeria
 				</h1>

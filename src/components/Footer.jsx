@@ -45,7 +45,8 @@ const Footer = () => {
 				<div className="max-w-[500px] flex flex-col gap-3 my-4">
 					<div className="font-bold pb-2">Contact</div>
 					<address>
-						<span>Address: </span> 12, Shodamola Street, Ajoke Estate, Fagba, Agege, Lagos.
+						<span>Address: </span> 12, Shodamola Street, Ajoke
+						Estate, Fagba, Agege, Lagos.
 					</address>
 					<div>
 						<span>Phone: </span>{" "}
@@ -59,12 +60,11 @@ const Footer = () => {
 					</div>
 					<div>
 						<span>Email: </span>{" "}
-						<a href="mailto:kadafpropertiesllp@gmail.com" className="underline italic">
+						<a
+							href="mailto:kadafpropertiesllp@gmail.com"
+							className="underline italic"
+						>
 							kadafpropertiesllp@gmail.com
-						</a>
-						,{" "}
-						<a href="mailto:info@kadafpropertiesllp.com" className="underline italic">
-							info@kadafpropertiesllp.com
 						</a>
 					</div>
 				</div>
